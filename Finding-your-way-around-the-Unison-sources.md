@@ -1,10 +1,10 @@
 Although parts of it are somewhat intricate, Unison is not a very large
 program.  If you want to get familiar with the code, the best place to
-start is probably with the textual user interface module, uitext.ml.  The
+start is probably with the textual user interface module, [uitext.ml](https://github.com/paulp/unison/blob/master/src/uitext.ml).  The
 'start' function at the bottom is a simple driver for all the rest of the
 major modules in the program.  (See below for some more details.)
 
-After that, check out main.ml to see how things get set up.  Again,
+After that, check out [main.ml](https://github.com/paulp/unison/blob/master/src/main.ml) to see how things get set up.  Again,
 the bottom is the most interesting part.
 
 Next, look at the interface files in this order:
@@ -28,9 +28,9 @@ uitext        the textual UI
 uigtk         the graphical UI (Gtk version)
 ```
 
-The files linktext.ml and linkgtk.ml contain linking commands for
-assembling unision with either a textual or a graphical user interface.
-(The Main module, which takes the UI as a paramter, is the only part of
+The files [linktext.ml](https://github.com/paulp/unison/blob/master/src/linktext.ml) and [linkgtk.ml](https://github.com/paulp/unison/blob/master/src/linkgtk.ml) contain linking commands for
+assembling Unison with either a textual or a graphical user interface.
+(The Main module, which takes the UI as a parameter, is the only part of
 the program that is functorized.)
 
 The module Remote handles RPC communication between clients and remote
