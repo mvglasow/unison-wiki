@@ -19,8 +19,10 @@ Note that there are no binaries for most operating systems, and no binaries for 
 
 Many packaging systems (including GNU/Linux distributions) provide unison binaries.  These are of varying recency and with varying ocaml versions.
 
+Packaging system binaries are maintained by packaging systems, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to the packaging system, rather than the github issue tracker or unison-users@ mailinglist.
+
  - Homebrew: OS X users can install Unison from Homebrew by typing "brew install unison".
- - Macports: OS X users can install Unison from Macports. (Note: Macports may only provide the text version; the GUI version is available from the "Download binaries" link above.)
+ - Macports: OS X users can install Unison from Macport (perhaps text UI only).
  - Fink: OS X users can also install Unison by using Fink Commander. Simply download and install Fink Commander, open it and type "Unison" in the search box. Select "Unison-nox" and click install from source. Fink will automatically install all required components.
  - pkgsrc: pkgsrc packages are available for recent versions of unison as net/unisonV.VV. Supported platforms include NetBSD, DragonflyBSD, Solaris, Darwin, OpenBSD, FreeBSD and also OSF/1, AIX, IRIX and Interix; see here for more information on pkgsrc.
  - FreeBSD: Dan Pelleg has ported unison to FreeBSD. This means that any FreeBSD user with an up-to-date "ports" collection can install unison by doing: cd /usr/ports/net/unison; make && make install. (Make sure your ports collection is fully up to date before doing this, to ensure that you get the most recent Unison version that has been compiled for FreeBSD.)
@@ -33,6 +35,8 @@ Many packaging systems (including GNU/Linux distributions) provide unison binari
 ## Binaries provided by other people
 
 The following links are to binaries of unison provided by various people.  They are not produced by the unison project and anyone contemplating use should evaluate their trustworthiness.  (Note that this is not an assertion of untrustworthiness.)
+
+These binaries are maintained by various people, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to them, rather than the github issue tracker or unison-users@ mailinglist.
 
 If there is a link, but it does not have the latest release compiled with a recent ocaml version (defined as >= 4.09), it will be marked as OLD.
 
