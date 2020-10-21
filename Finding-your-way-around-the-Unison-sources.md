@@ -1,3 +1,5 @@
+# TODO: Change ROADMAP.txt to ROADMAP.md and move markup, deleting this copy
+
 **This page is a marked up but otherwise wholesale import of src/ROADMAP.txt.**
 
 Although parts of it are somewhat intricate, Unison is not a very large
