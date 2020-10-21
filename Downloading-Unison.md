@@ -25,6 +25,12 @@ The following links are to binaries of unison provided by various people.  They 
 
 If the web page does not have the latest release compiled with a recent ocaml version (defined as >= 4.09), it will be marked as OLD.
 
+### Multi-OS sources
+
+#### inria
+
+http://unison-binaries.inria.fr/ (OLD)
+
 ### GNU/Linux
 
 #### SUSE
