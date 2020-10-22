@@ -15,7 +15,7 @@ The unison sources contain CI code, and github builds binaries for a number of p
 
 Note that there are no binaries for most operating systems, and no binaries for most CPU architectures.   Binaries are limited to a small number of popular OS/CPU combinations, based on what github offers.
 
-\todo Explain very briefly how to install these.
+See also [CI-built binary installation instructions](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions).
 
 ## Packaging systems
 
