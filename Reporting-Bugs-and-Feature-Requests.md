@@ -1,4 +1,4 @@
-# Reporting bugs
+# Reporting Bugs and Feature Requests
 
 If Unison is not working the way you expect, here are some steps to follow.
 
@@ -28,4 +28,16 @@ Please include the version of Unison you are using (``unison -version)`, the oca
 
 ## Reporting a bug
 
-The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that unison is behaving incorrectly, you are welcome to file a bug report.  The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.
+The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that unison is behaving incorrectly, you are welcome to file a bug report.
+
+Note that bugs must be against recent versions.  Even if you report a bug against 2.51.2 in 2020-10, you will be asked to update and retest.
+
+The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.
+
+Please set labels, and do not be offended if they are summarily adjusted.  Almost always, defect or crash is appropriate.
+
+## Feature requests
+
+Please understand that there are not a lot of people spending a lot of time maintaining unison, and that therefore requests for non-trivial features that would be useful to a tiny number of people are not necessarily a good tradeoff of the usefulness of the request vs the cognitive load of open tickets.   That said, feature requests that are likely of interest to at least some others are welcome.
+
+Please phrase feature requests as "Add ability to do X" or something along those lines.
