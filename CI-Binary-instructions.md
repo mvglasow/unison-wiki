@@ -10,6 +10,8 @@
 
 After unpacking the tarball, there is a file "unison" which is the text UI and can just be run from the command line.
 
+There is also (future; PR not yet merged) a "Unison.App", but before running it one must do ``xattr -cr /Applications/Unison.app``.  This has been reported to work on 10.14
+
 There is also "unison-gtk", but running it on 10.14 produces:
 
 ```
