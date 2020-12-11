@@ -10,4 +10,6 @@ This page attempts to collect information about which versions work with which o
 |old|new|sync-unchanged|sync|
 | :- | :- | :- | :- |
 |4.09|4.11|ok|FAIL|
+|4.08|4.11|ok|FAIL|
+|4.08|4.09|ok|ok|
 
