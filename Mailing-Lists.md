@@ -10,7 +10,7 @@ unison-users is a higher-volume discussion forum for users of unison. It is used
 
 This list is hosted by google groups, but does not require a google account to join.  To join the list, send an email to ``unison-users+subscribe@seas.upenn.edu``
 
-To post to the list, send to ``unison-users@seas.upenn.edu.com``
+To post to the list, send to ``unison-users@seas.upenn.edu``
 
 As of 2020-10, there are roughly 1200 subscribers.
 
