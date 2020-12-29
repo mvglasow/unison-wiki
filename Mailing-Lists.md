@@ -8,7 +8,9 @@ Note also that the github issue tracker is strictly for bugs and feature request
 
 unison-users is a higher-volume discussion forum for users of unison. It is used for discussions of many sorts --- proposals and designs for new features, installation and configuration questions, usage tips, etc. It is moderated to filter spam.
 
-unison-users is a mailman list.  To subscribe, see http://lists.seas.upenn.edu/mailman/listinfo/unison-users -- the list confirmation mail will provide posting instructions.
+This list is hosted by google groups, but does not require a google account to join. To join the list, send an email to unison-users+subscribe@seas.upenn.edu
+
+To post to the list, send to unison-users@seas.upenn.edu
 
 As of 2020-10, there are roughly 1200 subscribers.
 
