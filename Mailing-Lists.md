@@ -14,6 +14,8 @@ To post to the list, send to unison-users@seas.upenn.edu
 
 As of 2020-10, there are roughly 1200 subscribers.
 
+(Note that while there appears to be a unison-users mailman group at lists.seas.upenn.edu, it is not in use; do not try to join it, as this will just result in confusion and non-useful effort.)
+
 ## unison-hackers
 
 unison-hackers is for informal discussion among people seeking to improve Unison.  Anyone who wishes to lend a hand with maintaining and improving Unison is welcome to join, and that translates to "anyone would like to join is welcome".  Only members can post.
