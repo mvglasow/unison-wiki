@@ -12,7 +12,7 @@ After unpacking the tarball, there is a file "unison" which is the text UI.  Aft
 There is also "unison-gtk", which must also be chmod'd to be executable.  It depends on ``/usr/local/opt/gtk+/lib/libgtk-quartz-2.0.0.dylib
 ``, which is presuming the presence of some particular but currently unknown packaging system.   The wisdom of command-line programs with minimal dependencies is evident :-)
 
-There is also a "Unison.App", but before running it one must do ``xattr -cr /Applications/Unison.app``.  This has been reported to work on 10.14.  However, it failed on 10.13, but that could be due to the same assumption of a particular undocumented packaging system.
+There is also an artifact for "Unison.App".  It is a zip, and within that is a .tar.gz, and within that the App.  Before running it one must do ``xattr -cr /Applications/Unison.app``.  This has been reported to work on 10.14.  However, it failed on 10.13, but that could be due to the same assumption of a particular undocumented packaging system.
 
 ### Steps to use the binaries
 1. Download the macOS build
