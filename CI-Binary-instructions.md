@@ -6,25 +6,13 @@
 
 ## macOS
 
-\todo Write.
+There are two builds.  One builds traditional UNIX tools, and one builds a Mac app.
 
-After unpacking the tarball, there is a file "unison" which is the text UI and can just be run from the command line.
+After unpacking the tarball, there is a file "unison" which is the text UI.  After chmod'ing it to be executable, it can just be run from the command line.
+There is also "unison-gtk", which must also be chmod'd to be executable.  It depends on ``/usr/local/opt/gtk+/lib/libgtk-quartz-2.0.0.dylib
+``, which is presuming the presence of some particular but currently unknown packaging system.   The wisdom of command-line programs with minimal dependencies is evident :-)
 
-There is also (future; PR not yet merged) a "Unison.App", but before running it one must do ``xattr -cr /Applications/Unison.app``.  This has been reported to work on 10.14
-
-There is also "unison-gtk", but running it on 10.14 produces:
-
-```
-calling unison-gtk2 -version
-dyld: Library not loaded:
-/usr/local/opt/gtk+/lib/libgtk-quartz-2.0.0.dylib
-  Referenced from:
-/unison-v2.51.3+ocaml-4.09.1+x86_64.macos-10.15/bin/./unison-gtk2
-  Reason: image not found
-Abort trap: 6
-```
-
-and it is not clear where the gtk build is supposed to come from.
+There is also a "Unison.App", but before running it one must do ``xattr -cr /Applications/Unison.app``.  This has been reported to work on 10.14.  However, it failed on 10.13, but that could be due to the same assumption of a particular undocumented packaging system.
 
 ### Steps to use the binaries
 1. Download the macOS build
