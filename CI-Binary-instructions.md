@@ -1,5 +1,7 @@
 # Installing binaries built by the CI process
 
+Before reading this page, see also https://github.com/bcpierce00/unison/wiki/Downloading-Unison
+
 ## GNU/Linux
 
 \todo Write.
