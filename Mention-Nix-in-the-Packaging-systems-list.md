@@ -26,6 +26,7 @@ Packaging system binaries are maintained by packaging systems, not the Unison pr
  - Homebrew: macOS users can install Unison from Homebrew by typing "brew install unison".
  - Macports: macOS users can install Unison from Macport (perhaps text UI only).
  - Fink: macOS users can also install Unison by using Fink Commander. Simply download and install Fink Commander, open it and type "Unison" in the search box. Select "Unison-nox" and click install from source. Fink will automatically install all required components.
+ - Nix: Unison is included in the standard nixpkgs set for macOS and x86-64 Linux.
  - pkgsrc: pkgsrc packages are available for recent versions of unison as net/unisonV.VV. Supported platforms include NetBSD, DragonflyBSD, Solaris, Darwin, OpenBSD, FreeBSD and also OSF/1, AIX, IRIX and Interix; see here for more information on pkgsrc.
  - FreeBSD: Dan Pelleg has ported unison to FreeBSD. This means that any FreeBSD user with an up-to-date "ports" collection can install unison by doing: cd /usr/ports/net/unison; make && make install. (Make sure your ports collection is fully up to date before doing this, to ensure that you get the most recent Unison version that has been compiled for FreeBSD.)
  - OpenBSD: Unison is included in the standard OpenBSD ports tree, which means that you can install via "pkg_add unison" or build it from source using the standard OpenBSD ports mechanism. See http://www.openbsd.org/faq/faq15.html for information on OpenBSD ports and packages.
