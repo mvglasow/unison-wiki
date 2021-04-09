@@ -44,7 +44,7 @@ These binaries are maintained by various people, not the Unison project, and bug
 If there is a link, but it does not have the latest release compiled with a recent ocaml version (defined as >= 4.09), it will be marked as OLD.
 
  - http://unison-binaries.inria.fr/ (OLD)
- - built in [OBS](https://build.opensuse.org/project/show/Archiving:unison), published here: [https://download.opensuse.org/repositories/Archiving:/unison/](https://download.opensuse.org/repositories/Archiving:/unison/)
+ - built in [OBS](https://build.opensuse.org/project/show/Archiving:unison) for a large number of distributions with [OCaml 4.11.2](https://build.opensuse.org/package/show/Archiving:unison:buildrequires/ocaml), published here: [https://download.opensuse.org/repositories/Archiving:/unison/](https://download.opensuse.org/repositories/Archiving:/unison/)
  - https://www.preining.info/blog/2020/04/working-unison-for-debian/
  - Generic linux: Zbigniew Diaczyszyn has built an x86_64 binary for Unison on Slackware 14.0.
  - ARM Linux: Jens Wagner has compiled a static binary (text only) for the ARM Linux platform
