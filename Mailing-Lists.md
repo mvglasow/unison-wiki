@@ -20,6 +20,6 @@ As of 2020-10, there are roughly 1200 subscribers.
 
 unison-hackers is for informal discussion among people seeking to improve Unison.  Anyone who wishes to lend a hand with maintaining and improving Unison is welcome to join, and that translates to "anyone would like to join is welcome".  Only members can post.
 
-unison-hackers is also a mailman list.  To subscribe, see http://lists.seas.upenn.edu/mailman/listinfo/unison-hackers
+unison-hackers is managed with the Mailman mailing list server.  To subscribe, visit http://lists.seas.upenn.edu/mailman/listinfo/unison-hackers
 
 As of 2020-10 there are roughly 275 subscribers.
