@@ -6,8 +6,7 @@ Unison is primarily released as source.  See https://github.com/bcpierce00/uniso
 
 ## Binaries built by github
 
-The unison sources contain CI code, and github builds binaries for a number of platforms, available at the link above.
-
+The unison sources contain CI code, and github builds binaries for a number of platforms, available via the "Releases" tab.
   - Linux is built on Ubuntu, currently 18.04, and will likely work on other x86-64 machines with compatible dependencies.
   - Linux musl does not have the GUI and is likely more broadly usable.
   - macOS is built on macOS 10.15 with a target of 10.6, and will likely work correctly on earlier versions.
