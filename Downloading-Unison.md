@@ -35,6 +35,12 @@ Packaging system binaries are maintained by packaging systems, not the Unison pr
  - GODI: Alain Frisch has packaged Unison for distribution via the GODI manager for OCaml packages.
  - Zaurus: The Unison binary from the Debian ARM distribution has been repackaged for Linux PDAs such as the Compaq IPAQ and Sharp Zaurus: See the Zaurus software archives for details.
 
+## Indices of packages
+
+This index is somewhat useful, but incorrectly shows packaging systems as having old versions when there is an rc.
+
+https://repology.org/project/unison/badges
+
 ## Binaries provided by other people
 
 The following links are to binaries of unison provided by various people.  They are not produced by the unison project and anyone contemplating use should evaluate their trustworthiness.  (Note that this is not an assertion of untrustworthiness.)
