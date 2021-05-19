@@ -11,7 +11,6 @@ The unison sources contain CI code, and github builds binaries for a number of p
   - GNU/Linux musl does not have the GUI and is likely more broadly usable.
   - macOS is built on macOS 10.15 with a target of 10.6, and will likely work correctly on earlier versions.
   - Windows is built with mingw, and will likely work on Windows 7 and up.
-  - Builds for other operating systems and CPU types are not available.
 
 Note that there are no binaries for most operating systems, and no binaries for most CPU architectures.   Binaries are limited to a small number of popular OS/CPU combinations, based on what github offers.
 
