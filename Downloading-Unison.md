@@ -54,3 +54,5 @@ If there is a link, but it does not have the latest release compiled with a rece
  - https://www.preining.info/blog/2020/04/working-unison-for-debian/
  - Generic linux: Zbigniew Diaczyszyn has built an x86_64 binary for Unison on Slackware 14.0.
  - ARM Linux: Jens Wagner has compiled a static binary (text only) for the ARM Linux platform
+
+Another possibility for a unison server (without GUI) is to run it in a docker container: https://github.com/AlterDepp/unison-docker
