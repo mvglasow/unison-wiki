@@ -4,7 +4,7 @@ If Unison is not working the way you expect, here are some steps to follow.
 
 ## Upgrade to a supported version.
 
-The unison project does not provide support for old versions.  As of 2021-06, help will only be provided for 2.51.3 and newer, with a strong preference for 2.51.3rc3 or git master.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries.
+The unison project does not provide support for old versions.  As of 2021-06, help will only be provided for 2.51.3 and newer, and some people are only willing to think about 2.51.4 or git master beyond 2.51.4.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries.
 
 This guidance to update applies even if your operating system provides an older version.  The group of people contributing to unison maintenance is not responsible for how packaging systems (including GNU/Linux distributions) update unison, even though some of them help with some systems.   Please address issues such as "FooOS 42 has unison 2.48" to FooOS.
 
