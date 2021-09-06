@@ -19,7 +19,7 @@ There is also an artifact for "Unison.App".  It is a zip, and within that is a .
 ### Steps to use the binaries
 1. Download the macOS build
 2. Extract the bin directory
-3. Right click on the `unsion` binary and select open
+3. Right click on the `unison` binary and select open
 4. Confirm that you are okay with running the binary even thought it isn't verified
 5. I then had to open a terminal and move the binaries to `/usr/local/bin` so that when running unison over ssh from another host it would find the binaries.
 
