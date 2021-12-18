@@ -7,4 +7,5 @@
 
 ## Pointers to Documentation
 
+ * https://github.com/bcpierce00/unison/tree/documentation (up-to-date, awkward interface)
  * https://github.com/bcpierce00/unison/blob/documentation/unison-manual.pdf
