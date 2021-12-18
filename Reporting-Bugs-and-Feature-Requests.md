@@ -20,6 +20,10 @@ Next, try running Unison with the "-debug all" command line option. This will ca
 
 Try to reduce the complexity of what you are doing; sync locally even if that's not what you ultimately want.  If you can succeed at that, add things back one at a time.
 
+## Search existing issues
+
+There may be a bug report already that is similar.  It might contain a workaround.   You might be able to provide additional details, such as if you find a way to avoid or trigger the bug.   See https://github.com/bcpierce00/unison/issues
+
 ## Ask for help
 
 If the previous two steps didn't clarify matters, try sending an email describing your problem to the [users' list](https://github.com/bcpierce00/unison/wiki/Mailing-Lists). (Make sure you subscribe first, so that you'll see people's responses in case they reply only to the list!)
