@@ -26,19 +26,19 @@ There may be a bug report already that is similar.  It might contain a workaroun
 
 ## Ask for help
 
-If the previous two steps didn't clarify matters, try sending an email describing your problem to the [users' list](https://github.com/bcpierce00/unison/wiki/Mailing-Lists). (Make sure you subscribe first, so that you'll see people's responses in case they reply only to the list!)
+If the previous steps didn't clarify matters, try sending an email describing your problem to the [users' list](https://github.com/bcpierce00/unison/wiki/Mailing-Lists). (Make sure you subscribe first, so that you'll see people's responses in case they reply only to the list!)
 
-Please include the version of Unison you are using (``unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines.
+Please include the version of Unison you are using (``unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, the CPU type, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines if syncing non-locally.
 
 ## Reporting a bug
 
 The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that unison is behaving incorrectly, you are welcome to file a bug report.  Bug reports must include the version information described in the previous section.
 
-Note that bugs must be against recent versions.  Even if you report a bug against 2.51.2 in 2020-10, you will be asked to update and retest.
+Note that bugs must be against a recent version, perhaps the most recent version.  Even if you report a bug against 2.51.4 in 2021-12, you will likely be asked to update and retest.
 
 The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.
 
-Please set labels, and do not be offended if they are summarily adjusted.  Almost always, defect or crash is appropriate.
+Please set labels, and do not be offended if they are summarily adjusted.  Typically, defect or crash is appropriate.
 
 ## Feature requests
 
