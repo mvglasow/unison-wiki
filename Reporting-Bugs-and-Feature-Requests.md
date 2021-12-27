@@ -18,7 +18,7 @@ Next, try running Unison with the "-debug all" command line option. This will ca
 
 ## Simplify your setup
 
-Try to reduce the complexity of what you are doing; sync locally even if that's not what you ultimately want.  If you can succeed at that, add things back one at a time.
+Try to reduce the complexity of what you are doing.  Sync locally even if that's not what you ultimately want.  Turn off the watcher.  If you can succeed at that, add things back one at a time.
 
 ## Search existing issues
 
