@@ -43,7 +43,7 @@ If Docker Desktop for Windows already installed, you can append the "data-root" 
         total 540137
         -rwx------+ 1 Unknown+User Unknown+Group 519015312 Jan  1 16:12 'Docker Desktop Installer.exe'
     (_As you can see Windows Host C:\Users\Your_Username\Downloads is being mounted to winfolder, files between host and container can be exchanged_)
-1. We can exit the Docker Container environment by Enter 'exit' or pressing CTRL-C.
+1. We can exit the Docker Container environment by enter 'exit' or pressing CTRL-C.
 1. At this point you are re-enter the Windows Command Prompt.  
 If you need to re-enter the container environment you need to know the container ID by enter:  
 
