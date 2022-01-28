@@ -2,6 +2,10 @@
 
 If Unison is not working the way you expect, here are steps to follow.
 
+## Understand the purpose of the github issue tracker
+
+The issue tracker is for bug reports and (limited) enhancement requests. Specifically, this means that questions and requests for help are not appropriate as issues; those should be directed to unison-users (or unison-hackers if the discussion requires reading the source code).  Questions in the issue tracker will be summarily closed without answers.
+
 ## Upgrade to a supported version.
 
 The unison project does not provide support for old versions.  As of 2021-12, help will only be provided for 2.51.4 and newer, and some people are only willing to think about 2.51.5 or git master beyond 2.51.5.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries for a limited set of platforms.
