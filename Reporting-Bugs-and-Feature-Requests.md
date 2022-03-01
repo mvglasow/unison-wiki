@@ -1,18 +1,20 @@
-# Reporting Bugs and Feature Requests
+**Please do not create an issue or ask for help in other channels until you have read carefully this entire wiki page.**
+
+**If you created an issue and it was closed with only a link to this page, please read this page carefully, because the person who closed your issue almost certainly believes that your issue does not follow the rules described here.**
 
 If Unison is not working the way you expect, here are steps to follow.
 
-## Understand the purpose of the github issue tracker
+# Understand the purpose of the github issue tracker
 
 The issue tracker is for bug reports and (limited) enhancement requests. Specifically, this means that questions and requests for help are not appropriate as issues; those should be directed to unison-users (or unison-hackers if the discussion requires reading the source code).  Questions in the issue tracker will be summarily closed without answers.
 
-## Upgrade to a supported version.
+# Upgrade to a supported version.
 
-The unison project does not provide support for old versions.  As of 2021-12, help will only be provided for 2.51.4 and newer, and some people are only willing to think about 2.51.5 or git master beyond 2.51.5.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries for a limited set of platforms.
+The unison project does not provide support for old versions.  As of 2022-02, only 2.51.5 and newer are considered new enough to be allowed in the issue tracker.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries for a limited set of platforms.
 
 This guidance to update applies even if your operating system provides an older version.  The group of people contributing to unison maintenance is not responsible for how packaging systems (including GNU/Linux distributions) update unison, even though some of them help with some systems.   Please address issues such as "FooOS 42 has unison 2.48" to FooOS.
 
-## Look at the Unison documentation
+# Look at the Unison documentation
 
 First, look in the manual, and the FAQ section of the old website at https://alliance.seas.upenn.edu/~bcpierce/wiki/index.php.  Lots of questions are answered there.
 
@@ -36,9 +38,9 @@ Please include the version of Unison you are using (``unison -version)`, the oca
 
 ## Reporting a bug
 
-The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that unison is behaving incorrectly, you are welcome to file a bug report.  Bug reports must include the version information described in the previous section.
+The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that the current version of unison is behaving incorrectly, you are welcome to file a bug report.  Bug reports must include the version information described in the previous section.
 
-Note that bugs must be against a recent version, perhaps the most recent version.  Even if you report a bug against 2.51.4 in 2021-12, you will likely be asked to update and retest.
+Note that bugs must be against a recent version, often the most recent version.  Even if you report a bug against 2.51.4 in 2022-02, you will likely be asked to update and retest.
 
 The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.
 
