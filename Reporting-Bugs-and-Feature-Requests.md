@@ -4,7 +4,13 @@
 
 If Unison is not working the way you expect, here are steps to follow.
 
-# Understand the purpose of the github issue tracker
+# Understand the nature of the Unison project
+
+## Unison's product is the source code
+
+Unison's product is the source code. A packaging system having an old version is not a bug in Unison. The CI-provided binaries exist for Continuous Integration and are useful for users as a side benefit. Therefore, the CI binaries not working on a particular operating system is not a Unison bug. (In general, binaries should be provided by packaging systems.)
+
+## Understand the purpose of the github issue tracker
 
 The issue tracker is for bug reports and (limited) enhancement requests. Specifically, this means that questions and requests for help are not appropriate as issues; those should be directed to unison-users (or unison-hackers if the discussion requires reading the source code).  Questions in the issue tracker will be summarily closed without answers.
 
