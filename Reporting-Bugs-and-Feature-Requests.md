@@ -28,7 +28,7 @@ This guidance to update applies even if your operating system provides an older 
 
 # Look at the Unison documentation
 
-First, look in the manual, and the FAQ section of the old website at https://alliance.seas.upenn.edu/~bcpierce/wiki/index.php.  Lots of questions are answered there.
+First, look in the [manual](https://github.com/bcpierce00/unison/tree/documentation), and the FAQ section of the old website at https://alliance.seas.upenn.edu/~bcpierce/wiki/index.php.  Lots of questions are answered there.
 
 ## Turn on debugging
 
