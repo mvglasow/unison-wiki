@@ -2,7 +2,7 @@
 
 **If you created an issue and it was closed with only a link to this page, please read this page carefully, because the person who closed your issue almost certainly believes that your issue does not follow the rules described here.**
 
-If Unison is not working the way you expect, here are steps to follow.
+Unison does have a history of being helpful to people who take the time to ask for help in the right channels and follow the guidance in this page.   However, there are a only small number of people doing so, and the guidelines here are meant to maintain that willingness.
 
 # Understand the nature of the Unison project
 
