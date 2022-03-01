@@ -10,6 +10,12 @@ Unison does have a history of being helpful to people who take the time to ask f
 
 Unison's product is the source code. A packaging system having an old version is not a bug in Unison. The CI-provided binaries exist for Continuous Integration and are useful for users as a side benefit. Therefore, the CI binaries not working on a particular operating system is not a Unison bug. (In general, binaries should be provided by packaging systems.)
 
+## Unison is only concerned with the most recent release and the tip of git
+
+Generally, problems are fixed on the git master branch, and from time to time a new release is made.  From the project's viewpoint, old releases are obsolete, and bugs in them are no longer relevant.  While the license gives you the right to run old code, no one is interested in helping with that  -- advice is essentially always to upgrade.
+
+(If you are running an old version of Unison because you choose to run an LTS release, because someone else controls the computer on which it is running, or because your packaging system or operating system has an old version, that is something to be addressed with those parties, not with the Unison project.)
+
 ## Understand the purpose of the github issue tracker
 
 The issue tracker is for bug reports and (limited) enhancement requests. Specifically, this means that questions and requests for help are not appropriate as issues; those should be directed to unison-users (or unison-hackers if the discussion requires reading the source code).  Questions in the issue tracker will be summarily closed without answers.
