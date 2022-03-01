@@ -42,11 +42,11 @@ Try to reduce the complexity of what you are doing.  Sync locally even if that's
 
 There may be a bug report already that is similar.  It might contain a workaround.   You might be able to provide additional details, such as if you find a way to avoid or trigger the bug.   See https://github.com/bcpierce00/unison/issues
 
-## Ask for help
+## Ask for help on the mailinglist
 
 If the previous steps didn't clarify matters, try sending an email describing your problem to the [users' list](https://github.com/bcpierce00/unison/wiki/Mailing-Lists). (Make sure you subscribe first, so that you'll see people's responses in case they reply only to the list!)
 
-Please include the version of Unison you are using (``unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, the CPU type, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines if syncing non-locally.
+Please include the version of Unison you are using (`unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, the CPU type, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines if syncing non-locally.
 
 ## Reporting a bug
 
@@ -60,6 +60,6 @@ Please set labels, and do not be offended if they are summarily adjusted.  Typic
 
 ## Feature requests
 
-Please understand that there are not a lot of people spending a lot of time maintaining unison, and that therefore requests for non-trivial features that would be useful to a tiny number of people are not necessarily a good tradeoff of the usefulness of the request vs the cognitive load of open tickets.  Therefore, such speculative feature tickets may be closed.   That said, feature requests that are likely of interest to at least some others are welcome.
+Please understand that there are not a lot of people spending a lot of time maintaining unison, and that therefore requests for non-trivial features that would be useful to a tiny number of people are not necessarily a good tradeoff of the usefulness of the request vs the cognitive load of open tickets.  Therefore, such speculative feature tickets may be closed.   That said, well-articulated feature requests that are likely of interest to at least some others are welcome.
 
 Please phrase feature requests as "Add ability to do X" or something along those lines.
