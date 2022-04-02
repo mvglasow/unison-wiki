@@ -14,7 +14,7 @@ Unison's product is the source code. A packaging system having an old version is
 
 Generally, problems are fixed on the git master branch, and from time to time a new release is made.  From the project's viewpoint, old releases are obsolete, and bugs in them are no longer relevant.  While the license gives you the right to run old code, no one is interested in helping with that  -- advice is essentially always to upgrade.
 
-(If you are running an old version of Unison because you choose to run an LTS release, because someone else controls the computer on which it is running, or because your packaging system or operating system has an old version, that is something to be addressed with those parties, not with the Unison project.)
+If you are running an old version of Unison because you choose to run an LTS release, because someone else controls the computer on which it is running, or because your packaging system or operating system has an old version, that is something to be addressed with those parties, not with the Unison project.
 
 ## Understand the purpose of the github issue tracker
 
@@ -22,7 +22,7 @@ The issue tracker is for bug reports and (limited) enhancement requests. Specifi
 
 # Upgrade to a supported version.
 
-The unison project does not provide support for old versions.  As of 2022-02, only 2.51.5 and newer are considered new enough to be allowed in the issue tracker.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries for a limited set of platforms.
+The unison project does not provide support for old versions.  As of 2022-04, only 2.52.0 and newer are considered new enough to be allowed in the issue tracker.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries for a limited set of platforms.  The `unison-users` list is the appropriate place for help upgrading.
 
 This guidance to update applies even if your operating system provides an older version.  The group of people contributing to unison maintenance is not responsible for how packaging systems (including GNU/Linux distributions) update unison, even though some of them help with some systems.   Please address issues such as "FooOS 42 has unison 2.48" to FooOS.
 
@@ -40,7 +40,7 @@ Try to reduce the complexity of what you are doing.  Sync locally even if that's
 
 ## Search existing issues
 
-There may be a bug report already that is similar.  It might contain a workaround.   You might be able to provide additional details, such as if you find a way to avoid or trigger the bug.   See https://github.com/bcpierce00/unison/issues
+There may be a bug report already that is similar.  It might contain a workaround.   You might be able to provide additional details, such as if you find a way to avoid or trigger the bug.   See [the github bugtracker](https://github.com/bcpierce00/unison/issues)
 
 ## Ask for help on the mailinglist
 
