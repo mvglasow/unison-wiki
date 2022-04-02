@@ -56,10 +56,10 @@ Note that bugs must be against a recent version, often the most recent version. 
 
 The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.
 
-Please set labels, and do not be offended if they are summarily adjusted.  Typically, defect or crash is appropriate.
+Your issue, if not closed, will probably get labels with the maintainer's assessment of importance, difficulty, etc.  Do not worry about these decisions; bugs get fixed when someone submits a quality PR, and there is no team working on your high-priority bug.
 
 ## Feature requests
 
 Please understand that there are not a lot of people spending a lot of time maintaining unison, and that therefore requests for non-trivial features that would be useful to a tiny number of people are not necessarily a good tradeoff of the usefulness of the request vs the cognitive load of open tickets.  Therefore, such speculative feature tickets may be closed.   That said, well-articulated feature requests that are likely of interest to at least some others are welcome.
 
-Please phrase feature requests as "Add ability to do X" or something along those lines.
+Please phrase feature requests as "Add ability to do X" or something along those lines.  Explain precisely what the new behavior is.  Discuss alternative approaches and why the proposed behavior is correct.   If you are unclear on what is desired, pick one of the mailinglists to discuss and crystallize first.
