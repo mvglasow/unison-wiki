@@ -52,7 +52,7 @@ Please include the version of Unison you are using (`unison -version)`, the ocam
 
 The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that the current version of unison is behaving incorrectly, you are welcome to file a bug report.  Bug reports must include the version information described in the previous section.
 
-Note that bugs must be against a recent version, often the most recent version.  Even if you report a bug against 2.51.4 in 2022-02, you will likely be asked to update and retest.
+Note that bugs must be against a recent version, often the most recent version.  Even if you report a bug against 2.51.5 in 2022-04, you will likely be asked to update and retest.
 
 The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.
 
