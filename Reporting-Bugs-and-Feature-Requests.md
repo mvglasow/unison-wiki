@@ -38,7 +38,15 @@ Next, try running Unison with the "-debug all" command line option. This will ca
 
 ## Simplify your setup
 
-Reduce the complexity of what you are doing.  Sync locally even if that's not what you ultimately want.  Turn off the watcher.  Turn off -repeat.  Turn off -auto.  If you can succeed at that, add things back one at a time.  If the problem remains, you have created a smaller test case.   Create a test case with a few files if you can do that.
+Reduce the complexity of what you are doing, even if what you ultimately want is complicated.   Simplification steps include:
+  - Sync locally.  
+  - Turn off the watcher.
+  - Turn off -repeat.
+  - Turn off -auto.
+
+If you can succeed at that, add things back one at a time.  If the problem remains, you have created a smaller test case.
+
+Try to create a test case with the smallest number of files that triggers the bug.
 
 ## Search existing issues
 
@@ -65,6 +73,8 @@ The Github issue tracker has open tickets for bugs, and for enhancement requests
 Note that bugs must be against a recent version, often the most recent version.  Even if you report a bug against 2.51.5 in 2022-04, you will be asked to update and retest.
 
 The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.  The bug tracker is also not a consulting service.
+
+Log data must be provided as undamaged text (specifically without incorrect line wrapping) not an image of text.  This is for accessibility, and to enable those reading to choose font size and to be able to search.  Images of the GUI are acceptable when the bug concerns how the GUI displays things.
 
 Your issue, if not closed, will probably get labels with the maintainer's assessment of importance, difficulty, etc.  Do not worry about these decisions; bugs get fixed when someone submits a quality PR, and there is no team working on your high-priority bug.
 
