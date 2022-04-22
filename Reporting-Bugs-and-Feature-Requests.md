@@ -39,7 +39,8 @@ Next, try running Unison with the "-debug all" command line option. This will ca
 ## Simplify your setup
 
 Reduce the complexity of what you are doing, even if what you ultimately want is complicated.   Simplification steps include:
-  - Sync locally.  
+  - Sync locally.
+  - Use the Text User Interface.
   - Turn off the watcher.
   - Turn off -repeat.
   - Turn off -auto.
