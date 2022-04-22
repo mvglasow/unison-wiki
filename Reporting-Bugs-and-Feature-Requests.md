@@ -26,7 +26,9 @@ The unison project does not provide support for old versions.  As of 2022-04, on
 
 This guidance to update applies even if your operating system provides an older version.  The group of people contributing to unison maintenance is not responsible for how packaging systems (including GNU/Linux distributions) update unison, even though some of them help with some systems.   Please address issues such as "FooOS 42 has unison 2.48" to FooOS.
 
-# Look at the Unison documentation
+# Try to debug the problem yourself
+
+## Look at the Unison documentation
 
 First, look in the [manual](https://github.com/bcpierce00/unison/tree/documentation), and the FAQ section of the old website at https://alliance.seas.upenn.edu/~bcpierce/wiki/index.php.  Lots of questions are answered there.
 
@@ -42,21 +44,27 @@ Reduce the complexity of what you are doing.  Sync locally even if that's not wh
 
 There may be a bug report already that is similar.  It might contain a workaround.   You might be able to provide additional details, such as if you find a way to avoid or trigger the bug.   See [the github bugtracker](https://github.com/bcpierce00/unison/issues)
 
+## Prepare the required information for the mailinglist or the issue tracker
+
+Please include the version of Unison you are using (`unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, the CPU type, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines if syncing non-locally.
+
+# Asking for help and the issue tracker
+
+If after following the steps above, you are still having a problem, you can ask for help on the mailinglist.  If you can articulate that Unison is behaving incorrectly, you can file a bug in the issue tracker.   And, if you find that Unison is meeting its specification, but that different behavior would be useful to you -- and likely to others -- you can file an enhancement request.
+
 ## Ask for help on the mailinglist
 
 If the previous steps didn't clarify matters, try sending an email describing your problem to the [users' list](https://github.com/bcpierce00/unison/wiki/Mailing-Lists). (Make sure you subscribe first, so that you'll see people's responses in case they reply only to the list!)
 
-## Required information for mailinglist questions and issue tracker entries
-
-Please include the version of Unison you are using (`unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, the CPU type, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines if syncing non-locally.
+Unlike the issue tracker, mailinglist help requests could be for older versions, but you should still upgrade, because some people have no interest in debugging old versions.
 
 ## Reporting a bug
 
 The Github issue tracker has open tickets for bugs, and for enhancement requests.   If you can clearly articulate that the current version of unison is behaving incorrectly, you are welcome to file a bug report.  Bug reports must include the version information described in the previous section.
 
-Note that bugs must be against a recent version, often the most recent version.  Even if you report a bug against 2.51.5 in 2022-04, you will likely be asked to update and retest.
+Note that bugs must be against a recent version, often the most recent version.  Even if you report a bug against 2.51.5 in 2022-04, you will be asked to update and retest.
 
-The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.
+The language should be along the lines of "unison does this wrong.  I did X and should have gotten Y but Z happened".  If you are about to write "I don't understand how to do X" or "If I did Y would it work", that is a clue that your message belongs on the users list and is not a bug report.   The bug tracker is not a forum, and questions in the bug tracker will be summarily closed.  The bug tracker is also not a consulting service.
 
 Your issue, if not closed, will probably get labels with the maintainer's assessment of importance, difficulty, etc.  Do not worry about these decisions; bugs get fixed when someone submits a quality PR, and there is no team working on your high-priority bug.
 
