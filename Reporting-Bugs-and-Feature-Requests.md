@@ -8,11 +8,11 @@ Unison does have a history of being helpful to people who take the time to ask f
 
 ## Unison's product is the source code
 
-Unison's product is the source code. A packaging system having an old version is not a bug in Unison. The CI-provided binaries exist for Continuous Integration and are useful for users as a side benefit. Therefore, the CI binaries not working on a particular operating system is not a Unison bug. (In general, binaries should be provided by packaging systems.)
+Unison's product is the source code. A packaging system having an old version is not a bug in Unison. The CI-provided binaries exist for Continuous Integration and are useful for users as a side benefit. Therefore, the CI binaries not working on a particular operating system is not a Unison bug (there might be Unison bug lurking behind that, but there might not). (In general, binaries should be provided by packaging systems.)
 
 ## Unison is only concerned with the most recent release and the tip of git
 
-Generally, problems are fixed on the git master branch, and from time to time a new release is made.  From the project's viewpoint, old releases are obsolete, and bugs in them are no longer relevant.  While the license gives you the right to run old code, no one is interested in helping with that  -- advice is essentially always to upgrade.
+Generally, problems are fixed on the git master branch, and from time to time a new release is made.  From the project's viewpoint, old releases are obsolete, and bugs in them are no longer relevant.  While the license gives you the right to run old code, no one is interested in helping with that -- advice is essentially always to upgrade.
 
 If you are running an old version of Unison because you choose to run an LTS release, because someone else controls the computer on which it is running, or because your packaging system or operating system has an old version, that is something to be addressed with those parties, not with the Unison project.
 
@@ -22,7 +22,7 @@ The issue tracker is for bug reports and (limited) enhancement requests. Specifi
 
 # Upgrade to a supported version.
 
-The unison project does not provide support for old versions.  As of 2022-04, only 2.52.0 and newer are considered new enough to be allowed in the issue tracker.  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get precompiled binaries for a limited set of platforms.  The `unison-users` list is the appropriate place for help upgrading.
+The unison project does not provide support for old versions.  As of 2022-04, only 2.52.0 and newer are considered new enough to be allowed in the issue tracker.  You must upgrade both the local and the remote computer.   (We realize you might not have administrative permissions on the remote, but that does not create an obligation for the unison project to spend time dealing with old versions.)  If you are running an older version, **especially 2.48**, please upgrade before asking for help.  See https://github.com/bcpierce00/unison/wiki/Downloading-Unison for how to get pre-compiled binaries for a limited set of platforms.  The `unison-users` list is the appropriate place for help upgrading.
 
 This guidance to update applies even if your operating system provides an older version.  The group of people contributing to unison maintenance is not responsible for how packaging systems (including GNU/Linux distributions) update unison, even though some of them help with some systems.   Please address issues such as "FooOS 42 has unison 2.48" to FooOS.
 
@@ -36,7 +36,7 @@ Next, try running Unison with the "-debug all" command line option. This will ca
 
 ## Simplify your setup
 
-Try to reduce the complexity of what you are doing.  Sync locally even if that's not what you ultimately want.  Turn off the watcher.  If you can succeed at that, add things back one at a time.
+Reduce the complexity of what you are doing.  Sync locally even if that's not what you ultimately want.  Turn off the watcher.  Turn off -repeat.  Turn off -auto.  If you can succeed at that, add things back one at a time.  If the problem remains, you have created a smaller test case.   Create a test case with a few files if you can do that.
 
 ## Search existing issues
 
@@ -45,6 +45,8 @@ There may be a bug report already that is similar.  It might contain a workaroun
 ## Ask for help on the mailinglist
 
 If the previous steps didn't clarify matters, try sending an email describing your problem to the [users' list](https://github.com/bcpierce00/unison/wiki/Mailing-Lists). (Make sure you subscribe first, so that you'll see people's responses in case they reply only to the list!)
+
+## Required information for mailinglist questions and issue tracker entries
 
 Please include the version of Unison you are using (`unison -version)`, the ocaml version you compiled with, the OS type you are running it on, the version of the OS, the CPU type, a record of what gets printed when the ``-debug all`` option is included, and as much information as you can about what went wrong.  Be sure to include version information for both machines if syncing non-locally.
 
