@@ -2,13 +2,15 @@
 
 Before reading this page, see also https://github.com/bcpierce00/unison/wiki/Downloading-Unison
 
+Each CI build has been done on a particular operating system version.  There is no expectation that a build will run on a previous version, and even running on a later version depends on that operating system's compatibility support.
+
 ## GNU/Linux
 
 \todo Write.
 
 ## macOS
 
-There are two builds.  One builds traditional UNIX tools, and one builds a Mac app.
+There are two builds.  One builds traditional UNIX tools, and one builds a Mac app.  Both are currently built on 10.15, and also seem targetted at 10.15.
 
 After unpacking the tarball, there is a file "unison" which is the text UI.  After chmod'ing it to be executable, it can just be run from the command line.
 There is also "unison-gtk", which must also be chmod'd to be executable.  It depends on ``/usr/local/opt/gtk+/lib/libgtk-quartz-2.0.0.dylib
