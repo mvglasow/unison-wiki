@@ -2,6 +2,8 @@
 
 Before reading this page, see also https://github.com/bcpierce00/unison/wiki/Downloading-Unison
 
+Before reporting an issue about the CI binaries or anything, please thoroughly read and understand https://github.com/bcpierce00/unison/wiki/Reporting-Bugs-and-Feature-Requests
+
 Each CI build has been done on a particular operating system version.  There is no expectation that a build will run on a previous version, and even running on a later version depends on that operating system's compatibility support.
 
 ## GNU/Linux
