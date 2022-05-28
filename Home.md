@@ -1,8 +1,8 @@
-# Mandatory Reading Before Reporting Bugs or Asking for Help
+# Mandatory Reading Before Reporting Bugs
 
  * [Reporting Bugs and Feature Requests](https://github.com/bcpierce00/unison/wiki/Reporting-Bugs-and-Feature-Requests)
 
-# Migrating to 2.52: Urged for All Users
+# Migrating to 2.52
 
  - [2.52. Migration Guide](https://github.com/bcpierce00/unison/wiki/2.52-Migration-Guide)
 
@@ -11,7 +11,7 @@
  * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Downloading-Unison)
  * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
  * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
-
+ * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
 
 # Unison wiki
 
