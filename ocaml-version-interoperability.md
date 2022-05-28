@@ -1,14 +1,33 @@
-* Introduction
+# Introduction
 
-Before version 2.52.0, unison's wire protocol depended on the ocaml version.   In 2.52.0 there is a new wire protocol, used if both sides are 2.52.0 or later, that does not depend on the ocaml version.
+Before version 2.52.0, unison's wire protocol depended on the ocaml version.   In 2.52.0 there is a new wire protocol, used if both sides are 2.52.0 or later, that protocol does not depend on the ocaml version.  Thus, there is no need to use unison with matching ocaml versions.
 
-This page attempts to collect information about which ocaml versions work with which other versions, when using the 2.51 wire protocol.   When 2.52.0 is released, users should upgrade and this information should become irrelevant.
+# Interoperability Table
 
-* Interoperability Table
+This section collects information about unison interoperability when built with differing ocaml versions, when using the 2.51 wire protocol.   When 2.52.0 is released, users should upgrade and this information should become irrelevant.
 
 |old|new|sync-unchanged|sync|archive
 | :- | :- | :- | :- | :- |
 |4.09|4.11|ok|FAIL| ok? |
 |4.08|4.11|ok|FAIL| ? |
 |4.08|4.09|ok|ok| | ? |
+
+# Surveys
+
+This section contains data from surveying the Unison user community about ocaml versions in use.
+
+## February 2022 survey
+```
+4.13    9
+4.12    6
+4.11    9       obviously most are on 4.11 or higher: 24 votes
+4.10    4
+4.09    0       a clue that 4.09 and below have mostly aged out, except for LTS
+4.08    6       some kind of LTS?
+4.07    1
+4.06    1       FreeBSD ports 2022
+4.05    4       FreeBSD ports older, RHEL 8 (beta in 2018)
+4.02    1
+```
+
 
