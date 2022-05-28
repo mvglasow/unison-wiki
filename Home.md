@@ -6,19 +6,21 @@
 
  - [2.52. Migration Guide](https://github.com/bcpierce00/unison/wiki/2.52-Migration-Guide)
 
-# Unison as a user
+# Unison for users
 
+ * Note that release CI artifacts now contain the manual
  * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Downloading-Unison)
  * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
  * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
 
-# Unison wiki
+ * https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison
 
-## Pointers to Important Wiki Pages
+# Building Unison from sources
 
+ * https://github.com/bcpierce00/unison/wiki/Building-Windows-binary-with-MSVC-Ocaml-4.12-Using-Docker-Container
 
-## Pointers to Documentation
+# Contributing to Unison
 
- * https://github.com/bcpierce00/unison/tree/documentation (up-to-date, awkward interface)
- * https://github.com/bcpierce00/unison/blob/documentation/unison-manual.pdf
+ * https://github.com/bcpierce00/unison/wiki/Release-Process
+ * https://github.com/bcpierce00/unison/wiki/Finding-your-way-around-the-Unison-sources
