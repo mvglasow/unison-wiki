@@ -1,6 +1,18 @@
-# Source
+# Overview
 
-Unison is primarily released as source.  See https://github.com/bcpierce00/unison/releases for the latest release.
+The product of the unison project is source code.   It can be obtained by git checkout, and tarballs of releases are available at
+https://github.com/bcpierce00/unison/releases
+
+In addition there are binaries in various forms:
+ - Continuous Integration builds, made available because they are useful
+ - packaging systems
+ - binaries posted by various people
+
+A standard caution not specific to unison: using binaries requires a determination that the people providing the binaries are trustworthy, and that the process of building them and the hosting infrastructure is safe.  And of course there are similar concerns about source code
+
+# Sources
+
+Sources are available in tarball form at https://github.com/bcpierce00/unison/releases and via git at https://github.com/bcpierce00/unison, Code button.
 
 # Binaries
 
@@ -46,13 +58,9 @@ The following links are to binaries of unison provided by various people.  They 
 
 These binaries are maintained by various people, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to them, rather than the github issue tracker or unison-users@ mailinglist.
 
-If there is a link, but it does not have the latest release compiled with a recent ocaml version (defined as >= 4.09), it will be marked as OLD.
+Only recent  unison versions built with recent ocaml are listed.  This means at least 2.51 and 4.08.
 
- - https://alan.petitepomme.net/unison-binaries/ (OLD)
  - built in [OBS unison](https://build.opensuse.org/project/show/Archiving:unison) for a large number of distributions with [OCaml 4.14.0](https://build.opensuse.org/package/show/Archiving:unison:buildrequires/ocaml), published here: [https://download.opensuse.org/repositories/Archiving:/unison/](https://download.opensuse.org/repositories/Archiving:/unison/)
      * In case a pre-release exists for testing, it is also built in [OBS unison:next](https://build.opensuse.org/project/show/Archiving:unison:next), and published here: [https://download.opensuse.org/repositories/Archiving:/unison:/next](https://download.opensuse.org/repositories/Archiving:/unison:/next)
  - https://www.preining.info/blog/2020/04/working-unison-for-debian/
- - Generic linux: Zbigniew Diaczyszyn has built an x86_64 binary for Unison on Slackware 14.0.
- - ARM Linux: Jens Wagner has compiled a static binary (text only) for the ARM Linux platform
-
-Another possibility for a unison server (without GUI) is to run it in a docker container: https://github.com/AlterDepp/unison-docker
+ - [Arch docker container](https://github.com/AlterDepp/unison-docker)
