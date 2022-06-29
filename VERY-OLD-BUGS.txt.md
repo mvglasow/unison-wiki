@@ -1,58 +1,11 @@
-Wholesale import of src/TODO.txt.
+# Old bugs
+
+Wholesale import of src/TODO.txt, with pruning of things believed
+fixed or listed in the tracker.
+
+# SERIOUS
 
 ```
-                         OUTSTANDING UNISON BUGS
-                         =======================
-
-SHOWSTOPPERS
-============
-
-Mac OSX, Windows XP:
-  - Unison does not understand extended attributes (OSX) or alternate data
-    streams (XP) and will not synchronize them properly.
-
-Linux, Solaris:
-  - None known.
-
----------------------------------------------------------------------------
-SERIOUS
-=======
-
-[June 2006, Jim]
-  By the way, there is a bug if you are doing a merge and
-  are propagating times, the times of the merged file end
-  up different so you have to sync again.  I guess this
-  might be a feature, I don't know which way to propagate
-  the times...
-  ==> Best to make them both equal to the time of merging
-
-
-[July 2002, Findler]
-  I get this message from unison:
-    Fatal error: Internal error: New archives are not identical.
-    Retaining original archives.  Please run Unison again to bring them
-     up to date.
-    If you get this message again, please notify unison-help@cis.upenn.edu.
-  and I think that I know what's going wrong. Unison is somehow using a
-  key consisting of the result of `hostname' (and maybe other stuff) to
-  uniquely identify an archive. I have two macos x machine and I use both
-  of them to sync to a third (solaris) place. The problem seems to be
-  that unison can't tell the difference between two macos x machines,
-  since the default setup under macos x always gives the hostname
-  "localhost".
-  --
-  So, I wonder if there is some other way to distinguish the two
-  hostnames. Things that come to mind: ip addresses (but that can be bad
-  if the machine moves around), ethernet addresses (but my laptop has two
-  of them -- still better than ip addresses, I think) or perhaps some
-  macos-specific mechanism for getting the macos name of the computer.
-  --
-  For now, I've just changed the result of `hostname' on one of my
-  machines, but I just made up something that no DNS server agrees with,
-  so that might cause me trouble down the line, I'd bet.
-  ===> We should use some more information to make sure the archive names are
-       unique enough.  But what, exactly?
-
 [APril 2002, Jason Eisner] Recently I found an aliasing problem that may
   endanger Unison's semantics.
   --
@@ -68,22 +21,11 @@ SERIOUS
   file.  It doesn't currently detect the aliasing.  As a result, it keeps
   separate information for the two names in the archive files.
   [A long example is in a mailmessage in BCP's files]
+```
 
-starting Unison on two non-existent local directories leads to an
-  assertion failure in path.ml
+# MINOR
 
----------------------------------------------------------------------------
-MINOR
-=====
-
-Sascha Kuzins  [July 2002]
-  The server crashes everytime the client is finished.
-      "Fatal Error: Error in waiting on port: "
-          "The network name is not available anymore" (rough translation from
-  German)
-  I use Unison on two XP Professional machines, German versions, with the
-  simple tcp connection.
-
+```
 BCP  [May 2002]
   The "rescan paths that failed previous sync" function misses some files.
   E.g., if a directory has failed to transfer because the disk ran out of
@@ -129,14 +71,11 @@ Karl Moerder:
   previous profile and/or no files had changed in these directories --
   the type of bug that can only affect a new user, and so easy to
   overlook in testing."
+```
 
-The "Diff" window [under Windows] sometimes shows nothing.  Does this
-  arise from a missing "Diff" program?  We should detect this case!
+# COSMETIC
 
----------------------------------------------------------------------------
-COSMETIC
-========
-
+```
 Interactively adding an ignore pattern for src will not make
   src/RECENTNEWS immediately disappear (as it does not directly match
   the pattern)...
