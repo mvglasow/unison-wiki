@@ -1,28 +1,30 @@
-Wholesale import of src/TODO.txt.
-```
-Here we list planned and imagined improvements to Unison.  Ones that we
-regard as most important are marked with more *s.  (Note that, since Unison
-is no longer under active development [though it is still heavily used by
-its original developers], the presence of a suggestion in this file is not
-promise that anybody is going to implement it!)
+# Old TODO list
 
-See the file BUGS.txt for a list of currently open bugs.
+This should be thought of as entries that need sorting into one of the
+following categories:
 
-###########################################################################
+  - Add to issue tracker as enhancement request (or to some other
+    tracking mechanism for enhancements).
+  - Delete as already done.
+  - Delete as no longer advisable
+  - Something else
 
-* CURRENT
-* =======
+In general, this file is optimized for reading the md sources, rather than for display.
 
-* Update the copyright dates in the OSX GUI
+# Project
 
-* Make some preferences per-host
+## Patrol copyright dates vs commits
+
+# Random
+
+## Make some preferences per-host
      - file-system type
      - canonical name of the host
      - fastcheck
      - backup
      - fs watcher command
 
-* Merge issues:
+##  Merge issues:
      - It would be better to ignore the exit status of the external merge
        tool and just look at what files it produced to decide what happened
      - The function that runs the external program should not grab stdin /
@@ -30,9 +32,9 @@ See the file BUGS.txt for a list of currently open bugs.
      - The confirmation step should offer to display the new merged file.
      - (There are some older merge issues documented below)
 
-* Makefile for fstest
+##  Makefile for fstest
 
-* Work on the Unison side
+##  Work on the Unison side
      - create temp file
      - start watcher based on watcherosx switch, passing all paths as args
      - on each loop
@@ -46,7 +48,7 @@ See the file BUGS.txt for a list of currently open bugs.
      - bulletproof, handling fatal errors and restarting completely from
        scratch if necessary
 
-* Rsync debugging
+##  Rsync debugging
 
      - when using socket mode under windows, upon completion of the first
        external rsync call, the connection to the server is dropped (the
@@ -67,12 +69,12 @@ See the file BUGS.txt for a list of currently open bugs.
 
        We're running under Cygwin (which is needed to have rsync)
 
-* The directory scanning optimization is currently disabled under Windows,
+##  The directory scanning optimization is currently disabled under Windows,
   as FAT partitions do not have directory modification times.
   we could check whether we are on an NTFS partition by calling
   GetVolumeInformation to get the filesystem name.
 
-* We could defer most fingerprint computations to the propagation phase;
+##  We could defer most fingerprint computations to the propagation phase;
   this would improve the user experience and save some fingerprints:
   - do not compute fingerprint of new files during update detection
   - during reconciliation, try to decide what to do based on what is
@@ -80,18 +82,15 @@ See the file BUGS.txt for a list of currently open bugs.
   - for undecided paths (two files), request checksums (in batch)
   - hashes are finally computed during propagation
 
-###########################################################################
 
-* SOON
-* ====
 
-**** Document: root, fspath, path (local/not)
+## Document: root, fspath, path (local/not)
 
-**** Nice code cleanup trick: Add a phantom type param to Pref (and Pred?)
+## Nice code cleanup trick: Add a phantom type param to Pref (and Pred?)
      that prevents mutation from outside the module where the preference is
      defined (by exposing it with a weak type).
 
-**** Remaining problem with merging code:
+## Remaining problem with merging code:
        - create two directories, each containing a .txt file
        - sync so they are equal
        - change the file so that one region is in conflict and another
@@ -102,7 +101,7 @@ See the file BUGS.txt for a list of currently open bugs.
        - diagnosis: the merge stuff is not correctly updating the archive in
          the event of a partial reconciliation
 
-*** Un-writeable directories can't be copied.
+## Un-writeable directories can't be copied.
     The 'rename' operation at the end of Files.copy will fail (at least on
     OSX) if the path being renamed points to a directory and that directory
     (not the one containing it!) is not writeable by the user.  To fix this,
@@ -111,22 +110,23 @@ See the file BUGS.txt for a list of currently open bugs.
     be just after.  But I don't feel like writing this bit of code right
     now, to handle such a corner case.  [BCP, November 2008]
 
-*** Fix the pred module to understand negation and delete XXXnot predicates
+## Fix the pred module to understand negation and delete XXXnot predicates
 
-*** Web
+## Web
     - Add a "supported platforms" page mentioning system-specific stuff
     - Add an installation instructions page, removing it from the manual
 
-*** See if we can get rid of some Osx.XXX stuff (e.g. ressLength!?)
+## See if we can get rid of some Osx.XXX stuff (e.g. ressLength!?)
 
-*** Overlapping paths
+## Overlapping paths
     If one -path argument is a prefix of another, the same files will get
     scanned twice, found to need transferring twice, and transferred twice, but
     the first transfer messes up the second.  The fix would be to throw
     away -path arguments that are suffixes of other ones.
 
-*** Add the following to the Problems FAQ:
+## Add the following to the Problems FAQ:
 
+```
   --- In unison-hackers@y..., "Matt Swift" <swift@a...> wrote: > I just
   posted a msg to cygwin@c... detailing some very strange > behavior of
   chmod when a file's owner is also the file's group.  It
@@ -202,14 +202,15 @@ See the file BUGS.txt for a list of currently open bugs.
   confirm that "ntsec" or "ntea" is in the CYGWIN envariable and issue a
   big warning that permissions may not be properly synchronized if
   neither value is there.
+```
 
-** add '<meta http-equiv="expires" content="0">'
+## add '<meta http-equiv="expires" content="0">'
    to the head section of all the unison web pages.
 
-** Peter Selinger has built an SHA256 implementation that should be usable
+## Peter Selinger has built an SHA256 implementation that should be usable
    as a drop-in replacement for MD5, if we ever need to do that
 
-* There is no way of selecting files with wildchar. I had to use
+## There is no way of selecting files with wildchar. I had to use
      ignorenot = Name opt/root/.unison/*.prf
      ignore = Name opt/root/.unison/*
   But this is inconvinent, but the worse is that it gets complicated very
@@ -217,22 +218,21 @@ See the file BUGS.txt for a list of currently open bugs.
   something like (suggestion):
      Files = opt/root/.unison/*.prf
 
-* If a directory does not exist in one of the host, unison (for
+## If a directory does not exist in one of the host, unison (for
   security reasons, which I like) pops up a window and Quit is the only
   option. I would expect a message stating mere clearly on which host and
   direcory and an option to create that directory. I had recently to make
   a lot of reinstalls and new pendrives and it took a long time to create
   all those dirs. Someone in the list even made a script to do the job!!!
 
-* When synchronizing FAT32, there could be an explicit command for
+## When synchronizing FAT32, there could be an explicit command for
   ignoring attributes. The problem happens when one side is FAT32 but the
   other is not, or when mounting parameters are different.
 
 
-* BUILDING AND INSTALLING
-* =======================
+# BUILD/INSTALL
 
-** 'make install' could be improved (and documented)
+## 'make install' could be improved (and documented)
    1. Typing "make install' after a "make" should simply install the
    program that was made, not attempt to do a remake with different options.
    ===> Doesn't it???
@@ -242,26 +242,25 @@ See the file BUGS.txt for a list of currently open bugs.
 
 should strip symbols from binary files in 'make exportnative'
 
-* [Joerg von den Hoff, 2009] OS X: make the destination directory for the CL
+## [Joerg von den Hoff, 2009] OS X: make the destination directory for the CL
   version selectable (instead of dumping it in the middle of a systems
   directory :-)) something like /usr/local/bin or whatever might frequently be
   more suitable
 
 
-* DOCUMENTATION
-* =============
+# DOCUMENTATION
 
-** Put a little more order on the flags and preferences -- e.g.,
+## Put a little more order on the flags and preferences -- e.g.,
     organize them into "basic preferences", "advanced preferences,"
     "expert preferences," etc.  Requires hacking the Uarg module.
 
-** Add something to docs about how to use 'rootalias'.  Include an
+## Add something to docs about how to use 'rootalias'.  Include an
    explanation of the semantics, a couple of examples, and a suggestion
    for how to debug what it's doing by turning on appropriate debugging
    flags.  (And maybe we should actually make the debug output there a
    bit more verbose?)
 
-** Misc:
+## Misc:
   - document good trick: use -1 switch to ssh if the paths are set up wrong
     on the remote host
   - should say whether trailing slashes are ok for paths; should say
@@ -279,20 +278,19 @@ should strip symbols from binary files in 'make exportnative'
     somewhere? a few typos i noticed: "with t fast", "nison", "off of".
 
 
-* SMALL FUNCTIONALITY IMPROVEMENTS
-* ================================
+# SMALL FUNCTIONALITY IMPROVEMENTS
 
-**** Please let me say
+## Please let me say
        root = ~/bla
      instead of requiring me to give an absolute path to my home dir.
 
-*** [Marcus Sundman, 2008] Unison can't propagate changes in read-only
+## [Marcus Sundman, 2008] Unison can't propagate changes in read-only
     folders. The correct way to do it is to temporarily add write
     permissions for the user to the folder, then do the changes and then
     reset the permissions. Now unison tries to just do the changes, which
     fails with a "permission denied" error.
 
-*** [Adrian Stephens, 2007] I would like the scope of rootalias to be
+## [Adrian Stephens, 2007] I would like the scope of rootalias to be
     expanded so that any command that expects a root will perform aliasing
     on the command.  In my application, I need to change the root statement
     as I move my machine from desk to the road.  I also have a "force"
@@ -310,24 +308,24 @@ should strip symbols from binary files in 'make exportnative'
       - Find places like Recon.lookupPreferredRoot that deal with names of
         roots and add a call to the rootalias-expanding function.
 
-*** Delete old backups mechanism and, instead, extend new one to cover its
+## Delete old backups mechanism and, instead, extend new one to cover its
     functionality
        - put backups in same dir as files by default
        - otherwise, put them in a central place if one is given
        - Update.incrVersionsOfBackups should not be externally visible
 
-*** Consider altering the socket method, so the server accepts connections
+## Consider altering the socket method, so the server accepts connections
     only on a particular address? This would be very useful, because many people
     tunnel unison over an OpenVPN Link, and this software works with virtual
     devices and additional IP addresses on it. If unison would accept
     connections only on the virtual device, the security would be enhanced,
     because the OpenVPN key should be unavailable for the black hats.
 
-*** unison -help doesn't go to stdout so it's hard to pipe it into less
+## unison -help doesn't go to stdout so it's hard to pipe it into less
     ===> Probably *all* output should go to stdout, not stderr (but maybe
          we need a switch to recover the current behavior)
 
-*** If a root resides on a `host' with an ever and unpredictably changing
+## If a root resides on a `host' with an ever and unpredictably changing
     host name (like a public login cluster with dozens of machines and a
     shared file system), listing each possible host name for this root is
     not feasible.  The ability of specifing patterns in rootaliases would
@@ -339,18 +337,18 @@ should strip symbols from binary files in 'make exportnative'
          increasingly common.  Not sure if this is the right proposal, but
          something.
 
-*** Currently, if a file changes on either side between the initial update
+## Currently, if a file changes on either side between the initial update
     detection and the time when the transport module tries to propagate
     changes, the transport is aborted.  But if the change occurred on the
     replica that is being used as the source for the transfer (which will
     be the common case!), then there is no reason to abort -- we should
     just propagate the newest version.
 
-*** When unison notices lock files in the archive directory, it should
+## When unison notices lock files in the archive directory, it should
     offer to delete them *for* the user, rather than forcing the user to
     delete them manually.
 
-*** A switch to delete files before replication. It's not something I
+## A switch to delete files before replication. It's not something I
     would have considered doing, and in normal replication, there have
     already been pointed out good reasons why Unison works the way it
     does, but Roman makes a good reason for why this is useful in CD-RW
@@ -358,7 +356,7 @@ should strip symbols from binary files in 'make exportnative'
     this is certainly *generic*, which my point is not (as it only applies
     to the Microsoft Windows NTFS situation).
 
-*** A switch to include NTFS ACE/ACL file permissions to be copied when
+## A switch to include NTFS ACE/ACL file permissions to be copied when
     copying from one NTFS location to another NTFS location. As I
     mentioned this is less generic, but of fundamental usefullness in
     Windows usage, as NTFS permissions are absolutely essential in many
@@ -366,19 +364,19 @@ should strip symbols from binary files in 'make exportnative'
     /SEC switch, but Unison is a far better tool, and I was hoping in that
     light that Unison could implement the rights/permissions stuff also.
 
-*** There is no command-line argument to tell Unison where the .unison
+## There is no command-line argument to tell Unison where the .unison
     directory is; Unison finds it in the environment or not at all.  I was
     able to workaround this with a symbolic link to put .unison where it was
     expected, but it seems like an easy option to add.
 
-*** The other is possibly a bit more difficult, but more useful as well.  There
+## The other is possibly a bit more difficult, but more useful as well.  There
     is a brief window of vulnerability between when the local server is started
     and when the remote client connects to it.  (It's no longer than that
     because Unison won't take more than one connection at a time.)  I can
     tolerate it, but the window could be eliminated entirely by allowing socket
     connections to require a nonce.
 
-** An idea for the interface to the external merge functionality:
+## An idea for the interface to the external merge functionality:
   created a general mechanism for invoking external functionality...
     - in profile, declare a command of the form
            key M = external "merge ##1 ##2 ###" --> overwriting originals
@@ -393,7 +391,7 @@ should strip symbols from binary files in 'make exportnative'
            (or maybe this could be automatic)
          - (should also indicate which machine(s) to run the command on?)
 
-** small additions to merge functionality:
+## small additions to merge functionality:
   - if the external merge program *deletes* one of the files it is given,
     Unison should interpret this as "Copy the other file onto this location
     (instead of merging)".  This will allow some other interesting
@@ -404,12 +402,12 @@ should strip symbols from binary files in 'make exportnative'
   - would be nice to be able to invoke DIFFERENT merge programs
     depending on paths
 
-** We should document other available merge tools, e.g.,
+## We should document other available merge tools, e.g.,
    idiff [BCP has a copy of the code for idiff that Norman sent.]
 
-** Allow 'default.prf' in place of 'default' for profile names
+## Allow 'default.prf' in place of 'default' for profile names
 
-** [dlux@dlux.hu, Feb 2002] For some apps (e.g., some mail readers?),
+## [dlux@dlux.hu, Feb 2002] For some apps (e.g., some mail readers?),
   putting temp files in the same directory as the file we're about to
   overwrite is bad/dangerous. Some alternatives that we could
   consider...
@@ -425,7 +423,7 @@ should strip symbols from binary files in 'make exportnative'
        it to a tempfile into the target directory (with .unison.tmp
        extension) and then rename it into the final name.
 
-** Suggestion for extending merge functionality
+## Suggestion for extending merge functionality
      - add a new kind of preference -- a conditional stringlist preference
      - in the preference file, each value looks like either
             prefname = string
@@ -436,13 +434,13 @@ should strip symbols from binary files in 'make exportnative'
      - when we look up such a preference, we provide a current path, and it
        returns the one that matches the current path, if any
 
-** Would be good to (optionally) change the semantics of the "backup"
+## Would be good to (optionally) change the semantics of the "backup"
    functionality, so that Unison would not insist on making a *full*
    backup of the whole replica, but just do so lazily.  (I.e., it would
    not make backups when files get put into the archive, but only when
    they actually get changed.)
 
-** Would also be nice to allow the backup preference to be set
+## Would also be nice to allow the backup preference to be set
    differently on different hosts -- so that all the backups could be
    kept on one side (if there is no space on the other side, e.g.).  The
    obvious way to do this is to add a switch like '-suppressbackupsonroot
@@ -451,7 +449,7 @@ should strip symbols from binary files in 'make exportnative'
    different roots (e.g., the location of the archive dir, ...) and
    provide a general mechanism for setting them per-host.
 
-** ~/foo seems to work on the command line but not in root = ~/foo in the
+## ~/foo seems to work on the command line but not in root = ~/foo in the
    config file.
    --
    Similarly: It seems that when one specifies logfile = foobar
@@ -461,15 +459,15 @@ should strip symbols from binary files in 'make exportnative'
    remember to run unison from the root directory.
    ===> Would be nice to support ~ internally
 
-** giving a -path preference whose parent dir doesn't exist currently causes
+## giving a -path preference whose parent dir doesn't exist currently causes
    Unison to abort with a fatal error.  Would be better if it just
    signalled an error for that file.
 
-** no spec for escaping regexp chars; spaces? newlines? tabs? others?
+## no spec for escaping regexp chars; spaces? newlines? tabs? others?
    mechanism for getting the list of files from another program (plugin)?
    ===> needs to be documented (look at rx.ml)
 
-* [July 2002, S. Garfinkel] Maybe we should turn the 'time' option on by
+# [July 2002, S. Garfinkel] Maybe we should turn the 'time' option on by
   default.  We might need to help people a little on the upgrading,
   though.  When you did a sync with time=false, then a sync with
   time=true, you get a zillion conflicts...
@@ -477,10 +475,10 @@ should strip symbols from binary files in 'make exportnative'
          messages we'd get from upgrading users
      ==> Also, "make" can get confused when the 'time' option is set
 
-* Maybe we should write debugging and tracing information to stdout
+# Maybe we should write debugging and tracing information to stdout
   instead of stderr?
 
-* URI pathname syntax
+# URI pathname syntax
   Why is the following command wrong?
      unison -servercmd `which unison` /usr/local ssh://labrador/usr/local
   It took me three tries and careful reading of the documentation to
@@ -502,7 +500,7 @@ should strip symbols from binary files in 'make exportnative'
     is going to be a problem if unison is started in a different
     directory.
 
-* At the moment, if Unison is interrupted during a non-atomic operation
+# At the moment, if Unison is interrupted during a non-atomic operation
   on the file system, the user has to clean things up manually, following
   the instructions in the the recovery log.  We should do that for them.
   (This is actually a bit tricky, since we need to be careful about what
@@ -510,7 +508,7 @@ should strip symbols from binary files in 'make exportnative'
   accomplish this would be to write a general logging/recovery facility
   in OCaml.)
 
-* Dealing with ACLs: Maybe this is what we should do actually.  We could
+# Dealing with ACLs: Maybe this is what we should do actually.  We could
   specify a user (and similarly a group) to unison.  It would be
   interpreted in a special way: if a file is owned by this user, unison
   will rather consider that the owner of the file is undefined.  So, when
@@ -519,11 +517,11 @@ should strip symbols from binary files in 'make exportnative'
   consider that the owner has not been propagated and try again.  [Should
   be easy once the reconciler is made more modular]
 
-* The -terse preference should suppress more (in fact, almost all)
+# The -terse preference should suppress more (in fact, almost all)
   messages in the text ui.  See Dale Worley's message for a detailed
   proposal.
 
-* [Joerg von den Hoff, 2009] I use unison (up to now) only from the command
+# [Joerg von den Hoff, 2009] I use unison (up to now) only from the command
   line and it's used from within scripts or Makefiles. it is therefore
   unfortunate that by default the GUI pops up and one has to use `unison -ui
   text' to avoid this. it would seem better to have it the other way round,
@@ -531,29 +529,29 @@ should strip symbols from binary files in 'make exportnative'
   start up the GUI from the command line (I would argue that people using the
   GUI regularly will start it anyway by double clicking the app)
 
-Would be nice to have the Unison log file relative to my home directory,
- like this
+# Would be nice to have the Unison log file relative to my home directory,
+  like this
        logfile = ~/.unision/log
   or
        logfile = $HOME/.unision/log
   (We should do this for *all* files that the user specifies.)
 
-It would be nice if Unison could have the "power" to copy write-protected
+# It would be nice if Unison could have the "power" to copy write-protected
    files, maybe as an option.
 
-Update checking over NFS might be *much* faster if we use only relative
+# Update checking over NFS might be *much* faster if we use only relative
   pathnames (absolute paths may require an RPC per level!?)
 
-On one server (Saul), Unison seems to use HUGE amounts of memory (250Mb
+# On one server (Saul), Unison seems to use HUGE amounts of memory (250Mb
   resident), while on my laptop it's much less.  WTF?
   ==> Is that real memory or virtual memory?
 
-[Ben Wong, Aug 2002] Why not make unison fall back to addversionno if it
+# [Ben Wong, Aug 2002] Why not make unison fall back to addversionno if it
   would otherwise bomb out with an incorrect version number? That way I
   wouldn't have to educate people on how to use Unison at my site; it'd
   "just work".
 
-The -sortbysize is nice, but what I would really like is a -limitbysize.
+# The -sortbysize is nice, but what I would really like is a -limitbysize.
   When I'm connected over a modem line, I would like not to transfer the
   larger files that need synchronization. That can wait until I am
   connected via a faster connection. What I presently do is allow unison
@@ -563,10 +561,9 @@ The -sortbysize is nice, but what I would really like is a -limitbysize.
   obvious... It should be -limitbysize xxx, where xxx is the size
   (preferably in kb, but bytes will do as well).
 
-[From Yan Seiner]
-  Can unison modify the (*nix) environment to show the
-  ip/name/some_other_id of the system making the connection?  This would
-  help tremendously.
+#  Can unison modify the (*nix) environment to show the   ip/name/some_other_id of the system making the connection?  
+```
+  This would  help tremendously.
   For example, vtun does this:
   ---
   root      6319  0.0  0.6  1984  852 ?        S<   Aug27   0:37 vtund[s]:
@@ -581,12 +578,15 @@ The -sortbysize is nice, but what I would really like is a -limitbysize.
   So I know I have four sessions, to each named machine, and I know
   immediately who is connected and who is not.  If I have to kill a
   session, I don't kill the wrong one.
+```
 
-add a switch '-logerrors' that makes unison log error messages to a
+# add a switch '-logerrors' that makes unison log error messages to a
   separate file in addition to the standard logfile
 
-Dale Worley's suggestion for relocating archives:
-  >   You're right: it's not all that tricky.  So would you be happy if you
+# Dale Worley's suggestion for relocating archives:
+
+```
+>   You're right: it's not all that tricky.  So would you be happy if you
   >   could run unison in a special mode like this
   >       unison -relocate //old-host1//path1 //old-host2//path2 \
   >                        //new-host1//path1 //new-host2//path2
@@ -636,43 +636,44 @@ For safety...
     how many files are to be deleted/changed/created plus how many bytes
     to be transferred, and a warning signal (display in red or something)
     if these exceed the current setting of maxdelete.
+```
 
-Would be nice to be able to run unison in a special mode like this
+# Would be nice to be able to run unison in a special mode like this
     unison -relocate //old-host1//path1 //old-host2//path2 \
                      //new-host1//path1 //new-host2//path2
   (where all the hosts and paths are canonized) and have it move the
   archives for you on both machines?
 
-It would be nice if unison had a tool by which it could regenerate all
+# It would be nice if unison had a tool by which it could regenerate all
   the MD5 sums and compare them to what it has stored, then produce a list
   of files that are different.  I obviously cannot count on file size and
   date in  this case; those may not have changed but the contents may be
   corrupt.
 
-If the connection to the server goes away and then comes back up, it
+# If the connection to the server goes away and then comes back up, it
   would be nice if Unison would transparently re-establish it (at least,
   when this makes sense!)
 
-If we synchronize a path whose parent doesn't exist in one replica, we'll
+# If we synchronize a path whose parent doesn't exist in one replica, we'll
   fail.  Might be nicer to create the parent path if needed.
 
-maybe put backup files somewhere other than in the replica (e.g. in
+# maybe put backup files somewhere other than in the replica (e.g. in
   $HOME/tmp, or controlled by preference)
 
-Better documentation of the -backups flag, and a way to expire old backups
+# Better documentation of the -backups flag, and a way to expire old backups
 
-Add a preference that makes the reconciler ignore prefs-only differences
+# Add a preference that makes the reconciler ignore prefs-only differences
   between files (not updating the archive, though -- just suppressing
   the difference -- will this slow things down too much??  Maybe it needs
   to happen in the update detector, before things are transmitted across
   the network.)
 
-Perhaps we should interpret both / and the local separator as path
+# Perhaps we should interpret both / and the local separator as path
   separators, i.e., under Windows / and \, under Mac / and :, and under
   Unix just /.  For Windows this will be fine, since / is not allowed in
   filenames.
 
-Maybe have an option to tell do not transfer toto.dvi if toto.tex exists (or
+# Maybe have an option to tell do not transfer toto.dvi if toto.tex exists (or
   toto.ps if toto.dvi): something like
           Ignore .dvi If .tex
   ===> This is not a good idea -- would give different ignore results on
@@ -681,10 +682,10 @@ Maybe have an option to tell do not transfer toto.dvi if toto.tex exists (or
             Execute rm core If core
             Execute make clean If Makefile
 
-Maybe we should never emit a conflict for modtimes; instead, we just
+# Maybe we should never emit a conflict for modtimes; instead, we just
   propagate the largest one.
 
-[Ivo Welch] I would do a quick test of case sensitivity in the program
+# [Ivo Welch] I would do a quick test of case sensitivity in the program
 itself at the time you do a first prf sync, so that the user does not have
 to bother with it.  Just write two files on each end which differ in case,
 and see if there is overwriting.  Then do the smart thing.  The long-named
@@ -694,42 +695,35 @@ whenever a symlink is followed we might need to go through the same
 exercise.  And then we'd need to be able to deal with replicas that are not
 all one way or the other...)
 
-[Ivo Welch] I would give some examples in the man page of what an xxx
+# [Ivo Welch] I would give some examples in the man page of what an xxx
 specification is.
 
-[Ivo Welch] I would allow '--' switches, in addition to the '-' switch spec.
+# [Ivo Welch] I would allow '--' switches, in addition to the '-' switch spec.
 
-[Ivo Welch] On OSX, create a link from ~/Library/Application Support/Unison
-to .unison, just for ease of finding it. It took me a long time to find my
-.prf files.
 
-[Ivo Welch] the OSX GUI front end should be clear which side (left or right)
-the local host and which side the remote host is.
+# USER INTERFACE
 
-* USER INTERFACE
-* ==============
-
-** In menu Actions
+## In menu Actions
     - show Diff applies to the current line, while
     - revert to unision's recommandation applies to all lines
    Should be clearer and/or homogeneous behavior.
    I would also like to have "revert to unision's recommandation" for the
    current line.
 
-** in gtk ui, display green checkmark next to finished items even if their
+## in gtk ui, display green checkmark next to finished items even if their
    direction indicates a conflict; do not list such items as "skipped" at
    the end
 
-** In both UIs, show how many bytes/files were successfully transferred
+## In both UIs, show how many bytes/files were successfully transferred
    at the end
 
-** Should support auto-termination of the graphical UI (switch-controlled)
+## Should support auto-termination of the graphical UI (switch-controlled)
     * Unison starts in the usual way and checks for changes
     * If there are no conflicts, it proceeds without waiting for confirmation
     * If there *are* conflicts, it waits for instructions, just like now
     * In either case, when it's finished transferring the changes, it quits
 
-* [Matthew Swift] in the GTK gui at least,
+## [Matthew Swift] in the GTK gui at least,
   display the total MB or #files or whatever it is that the ticking
   %-meter is referring to when it goes from 0 to 100.  it is useful to
   know how big the xfer is going to be before starting it (might induce me
@@ -741,7 +735,7 @@ the local host and which side the remote host is.
   lot just to display whatever constant is represented by 100%.
 
 
-* [BCP] Error reporting for per-file problems during updating leaves
+## [BCP] Error reporting for per-file problems during updating leaves
   something to be desired.  In particular, there's no indication even of
   which host the problem occurred on.  (I added something that includes
   "root 1" or "root 2", but I'm not sure that's better than nothing.)  If
@@ -749,10 +743,10 @@ the local host and which side the remote host is.
   are lots of errors in a subdir, only the first will be reported.
   Recon.propagateUpdates would be a starting point for changes.
 
-* [Jamey Leifer]
+## [Jamey Leifer]
   Would be nice if both UIs had a "revert to Unison's proposal" button...
 
-* [Jamey Leifer]
+## [Jamey Leifer]
   [graphic ui, wishlist] The documentation topics aren't searchable.  As
   a result "unison -doc running | less" is still indispensable if one
   wants to find anything.  I suggest adding a box
@@ -765,15 +759,15 @@ the local host and which side the remote host is.
 
   [graphic ui, wishlist] Ditto as far as searchability for diff reports.
 
-* Would be nice to have a keystroke in the UI that means 'add the current
+## Would be nice to have a keystroke in the UI that means 'add the current
   directory to the set of ignore patterns.'
 
-* In the text UI, during the transport phase, print each file being
+## In the text UI, during the transport phase, print each file being
   transferred on *one* line, with an arrow to indicate which way (and
   dropping the explicit indication of which host from and to).  The
   logfile should be more explicit.
 
-* The unison gui currently displays a percentage completion in the lower right
+## The unison gui currently displays a percentage completion in the lower right
   corner.  I would find it comforting if it would also display an effective
   bandwidth there, i.e., how many bits per second are flowing through the
   transport layer?  I make this request because owing to a hardware
@@ -784,28 +778,28 @@ the local host and which side the remote host is.
   suggests not much is happening, but I don't know if the results can
   be trusted.)
 
-* Would it be hard to add "tool tips" to the buttons in the UI?
+## Would it be hard to add "tool tips" to the buttons in the UI?
   ==> Look for "tooltip" in examples/testgtk.ml.
       The easiest way is with a toolbar, but you can also add tooltips to any
       widget (cf lines 867 and after).
 
-* > On a line, I would like to have a description of the action to be taken in
+## > On a line, I would like to have a description of the action to be taken in
   > clear words: (e.g. will erase file on local or will copy from local to
   > remote, etc.)
   This might be a good use for "tool tips," if I knew how to make them work
   using lablGTK.
 
-* After clicking "Create new profile" in the initial profile window and
+## After clicking "Create new profile" in the initial profile window and
   giving a name for the new profile, it is confusing to get dumped back
   into the profile window again and have to explicitly select the new
   profile.  Would be better to skip this step and go straight into
   filling in its fields.
 
-* Another usability issue in the text UI: , and < should mean the same to
+## Another usability issue in the text UI: , and < should mean the same to
   unison. It would be nice if both had the same representation on-screen
   (ie, show a "<" even if I typed a ","). Similarly for . and >.
 
-* The menu help for left/right arrow both said `transfer local to local'.
+## The menu help for left/right arrow both said `transfer local to local'.
   Not helpful.  The items in question are pathnames, which you might not
   have to abbreviate.  To save space one might consider replacing any
   common prefix, and also short prefixes that look like they might be
@@ -815,19 +809,19 @@ the local host and which side the remote host is.
   especially attractive if my short names were meaningful on the command
   line.
 
-* In the GTK user interface, it would be nice to be able to put up a window
+## In the GTK user interface, it would be nice to be able to put up a window
   displaying the contents of the log file (and add log messages to it
   dynamically as we're working).  Be careful, though: the log could get
   large and we don't want this to be too slow.
 
-* Could there be an option between -ui text and -ui graphic that when combine
+## Could there be an option between -ui text and -ui graphic that when combine
   with -batch and -auto would start in text mode, but pop up an interactive
   graphic window when real conflicts happens.
 
-* [Jamey Leifer] I think "unison -doc" should be mapped to "unison
+## [Jamey Leifer] I think "unison -doc" should be mapped to "unison
   -doc topics" and the error message for the former eliminated.
 
-* [Jamey Leifer] Typing "unison" results in the Profiles box
+## [Jamey Leifer] Typing "unison" results in the Profiles box
   ("Select an existing profile...").  I think the help topics should be
   available here.
 
@@ -940,75 +934,72 @@ It would be nice to be able to STOP the GUI in the middle of propagating
   changes.
 
 
-* TIDYING
-* =======
+# TIDYING
 
-* Go through the sources and make all fatal and transient error messages
+
+## Go through the sources and make all fatal and transient error messages
   as informative as possible
 
-More documentation (especially in the interface files) is always nice.
+## More documentation (especially in the interface files) is always nice.
   In particular, there isn't enough documentation of the big picture.
   It isn't clear how to fit together archives, servers, paths, roots,
   update detection, reconciliation, conflict resolution, or the user
   interface...
 
-Ocamlexc v1.0, the uncaught exceptions analyzer for Objective Caml is now
+## Ocamlexc v1.0, the uncaught exceptions analyzer for Objective Caml is now
   available from Pessaux's home page.  It would be fun to run it over the
   Unison sources and see if it reveals any problems.
 
+# LARGER EXTENSIONS
 
-* LARGER EXTENSIONS
-* =================
-
-Fast update checking would be cool... Some resources:
+# Fast update checking would be cool... Some resources:
    FAM (used in Enlightenment)
    dnotify (linux 2.4)
    BSD kqueue
    the "VFS stacking layer" implemented by a guy at Columbia
 
-[From JMS]
-  Some update detection speed improvement suggestions:
+# [From JMS]  Some update detection speed improvement suggestions:
   - Read the FFS (Fast Filesystem) paper for hints
   - change the working directory instead of using absolute paths; this
     avoids calls to the evil iname(?) facility in the kernel
   - work breadth-first instead of depth first, to keep things in the
     kernel cache
 
-Rewrite recon.ml in a more modular way.  Probably, have for each property
+# Rewrite recon.ml in a more modular way.  Probably, have for each property
   a function taking the previous file state and the state on each
   replicas, and returning in what the synchronization operation should be
   (nothing, left, right, conflict); a combinator then merge the results.
 
-It would be good to have a graphical interface allowing management and
+# It would be good to have a graphical interface allowing management and
   editing of profiles, ignore patterns, etc.  Or, less ambitiously, just
   have UI options for all command-line options (killServer)
 
-How about a facility so that you can specify more than one pair of
+# How about a facility so that you can specify more than one pair of
   file systems for a single invocation of Unison? This would be like
   calling Unison multiple times, except that it would ask all the
   questions at once.  Better yet, we could actually deal with the
   multi-replica case.  (The latter is pretty hard.)
 
-What about invoking some user-specified operation on each file as it
+# What about invoking some user-specified operation on each file as it
   is transferred?  Or in each directory where things have changed?
   (This will require some careful design work.)
 
-Sync with archived directories (in tar / zip / gz format) would be
+# Sync with archived directories (in tar / zip / gz format) would be
   nice.  Seems a bit awkward to implement, though: at the moment there
   are a lot of functions all over the place that investigate and
   modify the file system, and these would all have to be replaced with
   a layer that transparently parses, etc., etc.
 
-Consider using other authentication services (e.g. Kerberos) instead
+# Consider using other authentication services (e.g. Kerberos) instead
   of / in addition to ssh.
 
-What happens when we synchronize, then decide to ignore some existing file
+# What happens when we synchronize, then decide to ignore some existing file
   What happens to the entry in the archive?  If mirroring, it may be
   large, we probably want to delete it from the archive.
 
-File level synchronization (bookmarks, mailboxes)
+# File level synchronization (bookmarks, mailboxes)
 
-It might be nice to implement an (optional) safety check that detects
+# It might be nice to implement an (optional) safety check that detects
   aliasing within a replica due to followed links (or hard links) and
   complains if it finds any.  This should not be *too* expensive, since
   we already know all the inode numbers.  (Even if it *is* expensive, it
@@ -1016,10 +1007,10 @@ It might be nice to implement an (optional) safety check that detects
   paranoid.)
 
 
-* WINDOWS ISSUES
-* ==============
+# WINDOWS ISSUES
 
-Suggestion from Arnaud:
+# Suggestion from Arnaud:
+```
   I have been using XP for a while and despite all the problems I have, there
   is a very nice feature: being able to mount remote folders (nothing new), to
   work with them offline and synchronize them. Really useful.
@@ -1033,8 +1024,10 @@ Suggestion from Arnaud:
   A good project for a student :-)
   --
   PS: see http://www.simplythebest.net/shellenh.html for some examples.
+```
 
-NTFS seems to have two ways of setting a file read-only!
+# NTFS seems to have two ways of setting a file read-only!
+```
 Comments from Karl Moerder:
     Tonight I made some files read-only on my desktop at home. I did this by
     setting global read and execute permissions (from the security tab of
