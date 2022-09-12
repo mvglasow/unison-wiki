@@ -13,8 +13,7 @@
  * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
  * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
-
- * https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison
+ * [Software for use with Unison](https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison)
 
 # Building Unison from sources
 
