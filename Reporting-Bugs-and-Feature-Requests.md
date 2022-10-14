@@ -8,7 +8,7 @@ Unison does have a history of being helpful to people who take the time to ask f
 
 ## Unison's product is the source code
 
-Unison's product is the source code.
+Unison's product is the source code.  This means that problems that are not in the source code release are not Unison bugs.
 
 A packaging system having an old version is not a bug in Unison.  A packaging system having an incorrect build procedure is not a bug in Unison.  Packaging system issues should be reported to the packaging system, and may not be entered in Unison's tracker.
 
