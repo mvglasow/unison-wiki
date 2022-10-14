@@ -8,7 +8,11 @@ Unison does have a history of being helpful to people who take the time to ask f
 
 ## Unison's product is the source code
 
-Unison's product is the source code. A packaging system having an old version is not a bug in Unison. The CI-provided binaries exist for Continuous Integration and are useful for users as a side benefit. Therefore, the CI binaries not working on a particular operating system is not a Unison bug (there might be Unison bug lurking behind that, but there might not). (In general, binaries should be provided by packaging systems.)
+Unison's product is the source code.
+
+A packaging system having an old version is not a bug in Unison.  A packaging system having an incorrect build procedure is not a bug in Unison.  Packaging system issues should be reported to the packaging system, and may not be entered in Unison's tracker.
+
+The CI-provided binaries exist for Continuous Integration and are useful for users as a side benefit. Therefore, the CI binaries not working on a particular operating system is not a Unison bug (there might be Unison bug lurking behind that, but there might not). In general, binaries should be provided by packaging systems.
 
 ## Unison is only concerned with the most recent release and the tip of git
 
