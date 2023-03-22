@@ -11,6 +11,10 @@ Features are somewhat organized, and many are just links to closed enhancement t
   - [Enable directory renaming within a root](https://github.com/bcpierce00/unison/issues/477)
   - [Tweak GUI tooltip strategy](https://github.com/bcpierce00/unison/issues/169)
 
+# Things that might be valid and might be fixed already
+
+  - [Allow sorting by all columns in the GUI](https://github.com/bcpierce00/unison/issues/17)
+
 # Issues not clearly understood
 
 These are issues that belong on unison-hackers rather than the tracker (following the rule that only fully-thought-out enhancement requests belong in the tracker).
