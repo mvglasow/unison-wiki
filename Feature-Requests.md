@@ -9,6 +9,7 @@ Features are somewhat organized, and many are just links to closed enhancement t
   - [Configure cleanup interval for tmp files](https://github.com/bcpierce00/unison/issues/837)
   - [Show progress in GUI when using external rsync](https://github.com/bcpierce00/unison/issues/549)
   - [Enable directory renaming within a root](https://github.com/bcpierce00/unison/issues/477)
+  - [Tweak GUI tooltip strategy](https://github.com/bcpierce00/unison/issues/169)
 
 # Issues not clearly understood
 
