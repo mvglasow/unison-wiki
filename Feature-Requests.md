@@ -9,3 +9,9 @@ Features are somewhat organized, and many are just links to closed enhancement t
   - [Configure cleanup interval for tmp files](https://github.com/bcpierce00/unison/issues/837)
   - [Show progress in GUI when using external rsync](https://github.com/bcpierce00/unison/issues/549)
   - [Enable directory renaming within a root](https://github.com/bcpierce00/unison/issues/477)
+
+# Issues not clearly understood
+
+These are issues that belong on unison-hackers rather than the tracker (following the rule that only fully-thought-out enhancement requests belong in the tracker).
+
+  - [Store backups only on server](https://github.com/bcpierce00/unison/issues/268)
