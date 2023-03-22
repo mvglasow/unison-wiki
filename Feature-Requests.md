@@ -7,3 +7,4 @@ Features are somewhat organized, and many are just links to closed enhancement t
 # User niceties
 
   - [Configure cleanup interval for tmp files](https://github.com/bcpierce00/unison/issues/837)
+  - [Show progress in GUI when using external rsync](https://github.com/bcpierce00/unison/issues/549)
