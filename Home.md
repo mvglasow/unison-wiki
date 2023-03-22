@@ -14,6 +14,7 @@
  * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
  * [Software for use with Unison](https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison)
+ * [Extra Feature Requests](https://github.com/bcpierce00/unison/wiki/Feature-Requests)
 
 # Building Unison from sources
 
