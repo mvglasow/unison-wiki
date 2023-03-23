@@ -11,6 +11,10 @@ Features are somewhat organized, and many are just links to closed enhancement t
   - [Enable directory renaming within a root](https://github.com/bcpierce00/unison/issues/477)
   - [Tweak GUI tooltip strategy](https://github.com/bcpierce00/unison/issues/169)
 
+# Non-portable efficiency improvements
+
+  - [Use NTFS's USN for change detection](https://github.com/bcpierce00/unison/issues/209)
+
 # Things that might be valid and might be fixed already
 
   - [Allow sorting by all columns in the GUI](https://github.com/bcpierce00/unison/issues/17)
