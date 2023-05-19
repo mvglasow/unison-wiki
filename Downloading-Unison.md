@@ -24,6 +24,8 @@ The unison sources contain CI code, and github builds binaries for a limited num
   - macOS is built on macOS 10.15 with a target of 10.6, and will likely work correctly on earlier versions.
   - Windows is built with mingw, and will likely work on Windows 7 and up.
 
+Most (all?) of these artifacts contain not only the unison executable but also the manual.
+
 Note that there are no binaries for most operating systems, and no binaries for most CPU architectures.   Binaries are limited to a small number of OS/CPU combinations, based on what github offers.
 
 See also [CI-built binary installation instructions](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions).
