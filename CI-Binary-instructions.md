@@ -8,7 +8,19 @@ Each CI build has been done on a particular operating system version.  There is 
 
 ## GNU/Linux
 
-\todo Write.
+As an example, the file `unison-2.53.3-ubuntu-x86_64-static.tar.gz` contains
+```
+ -rw-r--r--    root/root      35147 LICENSE
+ -rw-r--r--    root/root       6916 README.md
+ drwxr-xr-x    root/root          0 bin/
+ -rwxr-xr-x    root/root    3065536 bin/unison
+ -rwxr-xr-x    root/root    1109952 bin/unison-fsmonitor
+ -rw-r--r--    root/root     214126 unison-manual.html
+ -rw-r--r--    root/root     363952 unison-manual.pdf
+ -rw-r--r--    root/root     157212 unison-manual.txt
+```
+
+\todo Explain if `unison` is dynamically linked and if so, what it expects.
 
 ## macOS
 
