@@ -8,7 +8,7 @@
 
 # Unison for users
 
- * Note that release CI artifacts now contain the manual
+ * Note that release CI artifacts now contain the manual.  Manual binaries, not always up to date, are currently at https://github.com/bcpierce00/unison/tree/documentation
  * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Downloading-Unison)
  * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
  * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
