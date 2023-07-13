@@ -2,7 +2,7 @@
 
  * [Reporting Bugs and Feature Requests](https://github.com/bcpierce00/unison/wiki/Reporting-Bugs-and-Feature-Requests)
 
-# Documentation
+# Documentation and User Information
 
  * [Unison user manual](https://github.com/bcpierce00/unison/tree/documentation) (This version may not always be up to date with the current release of Unison.  Release CI artifacts also include an appropriate manual.)
  * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Downloading-Unison)
