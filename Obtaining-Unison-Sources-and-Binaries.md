@@ -4,11 +4,11 @@ The product of the unison project is source code.   It can be obtained by git ch
 https://github.com/bcpierce00/unison/releases
 
 In addition there are binaries in various forms:
- - Continuous Integration builds, made available because they are useful
+ - Continuous Integration builds, done for CI purposes, but also made available
  - packaging systems
  - binaries posted by various people
 
-A standard caution not specific to unison: using binaries requires a determination that the people providing the binaries are trustworthy, and that the process of building them and the hosting infrastructure is safe.  And of course there are similar concerns about source code
+A standard caution not specific to unison: using binaries requires a determination that the people providing the binaries are trustworthy, and that the process of building them and the hosting infrastructure is safe.  (There are similar concerns about source code.)
 
 # Sources
 
@@ -16,11 +16,10 @@ Sources are available in tarball form at https://github.com/bcpierce00/unison/re
 
 # Binaries
 
-## Binaries built by github
+## Binaries built by CI
 
-The unison sources contain CI code, and github builds binaries for a limited number of platforms, available via the "Releases" tab.
-  - GNU/Linux is built on Ubuntu, currently 18.04, and will likely work on other x86-64 machines with compatible dependencies.
-  - GNU/Linux musl does not have the GUI and is likely more broadly usable.
+The unison sources contain CI code, and project CI (github GHA at the moment) builds binaries for a limited number of platforms, available via the "Releases" tab.
+  - Ubuntu is probably 20.04, and will likely work on other x86-64 machines with compatible dependencies.
   - macOS is built on macOS 10.15 with a target of 10.6, and will likely work correctly on earlier versions.
   - Windows is built with mingw, and will likely work on Windows 7 and up.
 
@@ -34,20 +33,18 @@ See also [CI-built binary installation instructions](https://github.com/bcpierce
 
 Many packaging systems (including GNU/Linux distributions) provide unison binaries.  These are of varying recency and with varying ocaml versions.
 
-Packaging system binaries are maintained by packaging systems, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to the packaging system, rather than the github issue tracker or unison-users@ mailinglist.
+Packaging system binaries are maintained by packaging systems, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to the packaging system, rather than the github issue tracker or the unison-users@ mailinglist.  This list does not attempt to give or duplicate documentation for each packaging system; it assumes familiarity with the packaging system and simply points to where unison is located within it.  Packaging systems are listed in decreasing order of portability, and then by OS, with proprietary systems later.
 
- - Homebrew: macOS users can install Unison from Homebrew by typing "brew install unison".
- - Macports: macOS users can install Unison from Macport (perhaps text UI only).
- - Fink: macOS users can also install Unison by using Fink Commander. Simply download and install Fink Commander, open it and type "Unison" in the search box. Select "Unison-nox" and click install from source. Fink will automatically install all required components.
- - Nix: Unison is included in the standard nixpkgs set for macOS and x86-64 Linux.
- - pkgsrc: unison is packaged as net/unison, and development versions are sometimes available as wip/unison-snapshot.  Supported platforms include NetBSD, DragonflyBSD, Solaris, Darwin, OpenBSD, FreeBSD and also OSF/1, AIX, IRIX and Interix; see here for more information on pkgsrc.
- - FreeBSD: Dan Pelleg has ported unison to FreeBSD. This means that any FreeBSD user with an up-to-date "ports" collection can install unison by doing: cd /usr/ports/net/unison; make && make install. (Make sure your ports collection is fully up to date before doing this, to ensure that you get the most recent Unison version that has been compiled for FreeBSD.)
- - OpenBSD: Unison is included in the standard OpenBSD ports tree, which means that you can install via "pkg_add unison" or build it from source using the standard OpenBSD ports mechanism. See http://www.openbsd.org/faq/faq15.html for information on OpenBSD ports and packages.
- - Debian: There is a Debian package for Unison.
- - Cygwin: Thanks to Andrew Schulman, Cygwin should be able to install unison (text ui only) from the Cygwin setup utility.
- - GODI: Alain Frisch has packaged Unison for distribution via the GODI manager for OCaml packages.
- - Zaurus: The Unison binary from the Debian ARM distribution has been repackaged for Linux PDAs such as the Compaq IPAQ and Sharp Zaurus: See the Zaurus software archives for details.
-
+ - [pkgsrc](https://www.pkgsrc.org) (NetBSD, illumos, and almost every even semi-maintained platform except Windows): Release present as net/unison, and development snapshot as wip/unison-snapshot.
+ - Nix (x86-64 Linux and macOS): Present.
+ - most GNU/Linux distributions: Present as unison.
+ - FreeBSD ports: Present as net/unison
+ - OpenBSD ports: Present as unison.
+ - Homebrew (macOS only): Present as unison.
+ - Macports (macOS only): Perhaps TUI only.
+ - Fink (macOS only): Present as "Unison-nox".
+ - Cygwin (Windows only): Present as unison, perhaps TUI only.
+ 
 ### Indices
 
 This index is very useful, but incorrectly shows packaging systems as having old versions when there is an rc.
