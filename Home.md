@@ -10,10 +10,11 @@
     - [pdf manual](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.pdf)
     - [html manual (missing mime type so will likely not render in browser)](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.html)
  * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
- * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
  * [Software for use with Unison](https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison)
  * [Extra Feature Requests](https://github.com/bcpierce00/unison/wiki/Feature-Requests)
+ * [historical notes on OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
+
 
 # Migrating to 2.52
 
