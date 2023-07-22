@@ -4,7 +4,7 @@
 
 # Documentation and User Information
 
- * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Obtaining-Unison-Sources-and-Binaries)
+ * [Obtaining Unison Sources and Binaries](https://github.com/bcpierce00/unison/wiki/Obtaining-Unison-Sources-and-Binaries)
  * [Unison user manual](https://github.com/bcpierce00/unison/tree/documentation) (This version may not always be up to date with the current release of Unison.  Release CI artifacts contain the manual.)
     - [plain text manual](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.txt)
     - [pdf manual](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.pdf)
