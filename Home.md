@@ -4,8 +4,8 @@
 
 # Documentation and User Information
 
+ * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Obtaining-Unison-Sources-and-Binaries)
  * [Unison user manual](https://github.com/bcpierce00/unison/tree/documentation) (This version may not always be up to date with the current release of Unison.  Release CI artifacts also include an appropriate manual.)
- * [Downloading Unison](https://github.com/bcpierce00/unison/wiki/Downloading-Unison)
  * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
  * [OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
