@@ -57,8 +57,9 @@ The following links are to binaries of unison provided by various people.  They 
 
 These binaries are maintained by various people, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to them, rather than the github issue tracker or unison-users@ mailinglist.
 
-Only recent  unison versions built with recent ocaml are listed.  This means at least 2.53.0 and 4.11.
+Only reasonably up-to-daet unison versions built with a maintained version of ocaml are listed.  This means a Unison version that is either the most recent release or was the most recent release some time in the last 90 days.
 
  - built in [OBS unison](https://build.opensuse.org/project/show/Archiving:unison) for a large number of distributions with [OCaml 4.14.0](https://build.opensuse.org/package/show/Archiving:unison:buildrequires/ocaml), published here: [https://download.opensuse.org/repositories/Archiving:/unison/](https://download.opensuse.org/repositories/Archiving:/unison/)
      * In case a pre-release exists for testing, it is also built in [OBS unison:next](https://build.opensuse.org/project/show/Archiving:unison:next), and published here: [https://download.opensuse.org/repositories/Archiving:/unison:/next](https://download.opensuse.org/repositories/Archiving:/unison:/next)
- - [Arch docker container](https://github.com/AlterDepp/unison-docker)
+ - [Arch docker container](https://github.com/AlterDepp/unison-docker) - OLD, pending removal from this page.  See https://github.com/AlterDepp/unison-docker/issues/1
+
