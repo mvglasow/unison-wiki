@@ -5,11 +5,11 @@
 # Documentation and User Information
 
  * [Obtaining Unison Sources and Binaries](https://github.com/bcpierce00/unison/wiki/Obtaining-Unison-Sources-and-Binaries)
- * [Unison user manual](https://github.com/bcpierce00/unison/tree/documentation) (This version may not always be up to date with the current release of Unison.  Release CI artifacts contain the manual.)
+ * [Unison User Manual](https://github.com/bcpierce00/unison/tree/documentation) (This version may not always be up to date with the current release of Unison.  Release CI artifacts contain the manual.)
     - [plain text manual](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.txt)
     - [pdf manual](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.pdf)
     - [html manual (missing mime type so will likely not render in browser)](https://raw.githubusercontent.com/bcpierce00/unison/documentation/unison-manual.html)
- * [Mailing lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
+ * [Mailing Lists](https://github.com/bcpierce00/unison/wiki/Mailing-Lists)
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
  * [Software for use with Unison](https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison)
  * [Extra Feature Requests](https://github.com/bcpierce00/unison/wiki/Feature-Requests)
