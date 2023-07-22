@@ -1,4 +1,4 @@
-# Mandatory Reading Before Reporting Bugs
+# Mandatory Reading Before Using the Issue Tracker
 
  * [Reporting Bugs and Feature Requests](https://github.com/bcpierce00/unison/wiki/Reporting-Bugs-and-Feature-Requests)
 
