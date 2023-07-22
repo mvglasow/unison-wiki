@@ -31,7 +31,7 @@ See also [CI-built binary installation instructions](https://github.com/bcpierce
 
 ## Packaging systems
 
-Many packaging systems (including GNU/Linux distributions) provide unison binaries.  These are of varying recency and with varying ocaml versions.
+Many packaging systems (including GNU/Linux distributions) provide unison binaries.  These are of varying recency and with varying ocaml versions.  Packaging systems generally should provide the documenation as well; this is highly variable in practice.
 
 Packaging system binaries are maintained by packaging systems, not the Unison project, and bug reports, complaints about which version is offered, etc. should be addressed to the packaging system, rather than the github issue tracker or the unison-users@ mailinglist.  This list does not attempt to give or duplicate documentation for each packaging system; it assumes familiarity with the packaging system and simply points to where unison is located within it.  Packaging systems are listed in decreasing order of portability, and then by OS, with proprietary systems later.
 
