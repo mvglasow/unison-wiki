@@ -13,12 +13,11 @@
  * [Instructions for using CI Binaries](https://github.com/bcpierce00/unison/wiki/CI-Binary-instructions)
  * [Software for use with Unison](https://github.com/bcpierce00/unison/wiki/Software-for-use-with-Unison)
  * [Extra Feature Requests](https://github.com/bcpierce00/unison/wiki/Feature-Requests)
- * [historical notes on OCaml versions](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
 
-
-# Migrating to 2.52
-
- - [2.52. Migration Guide](https://github.com/bcpierce00/unison/wiki/2.52-Migration-Guide)
+# Historical Documentation
+ 
+ * [2.52 Migration Guide](https://github.com/bcpierce00/unison/wiki/2.52-Migration-Guide)
+ * [notes on OCaml versions, from when that mattered](https://github.com/bcpierce00/unison/wiki/OCaml-versions)
 
 # Building Unison from sources
 
