@@ -6,7 +6,7 @@ Note also that the github issue tracker is strictly for bugs and feature request
 
 ## unison-users
 
-unison-users is a higher-volume discussion forum for users of unison. It is used for discussions of many sorts --- proposals and designs for new features, installation and configuration questions, usage tips, etc.  Generally, if the discussion requires an understanding of the current code base, it is more apppriate on -hackers.   unison-users is moderated to filter spam, so you should not expect your postings to appear immediately.
+unison-users is a higher-volume discussion forum for users of unison. It is used for discussions of many sorts --- proposals and designs for new features, installation and configuration questions, usage tips, etc.  Generally, if the discussion requires an understanding of the current code base, it is more apppriate on -hackers.   unison-users is moderated to filter spam, so you should not expect your postings to appear immediately.   As with most lists, it requires subscription to post.
 
 This list is hosted by google groups, but does not require a google account to join. To join the list, send an email to `unison-users+subscribe@seas.upenn.edu`.   In 2022-11, there was one report that the method to join without a google account does not work, and one report that it did.
 
