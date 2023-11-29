@@ -4,6 +4,10 @@ This page contains feature requests that are unlikely to ever be implemented, fo
 
 Features are somewhat organized, and many are just links to closed enhancement tickets.  The point is to move the issue tracker towards having actionable items, and to organize the unlikely-to-ever-happen requests.
 
+# Increased Granularity
+
+  - [Allow excluding all subdirectories, leaving only files in the root](https://github.com/bcpierce00/unison/issues/981)                                                                                                                                   
+
 # User niceties
 
   - [Configure cleanup interval for tmp files](https://github.com/bcpierce00/unison/issues/837)
