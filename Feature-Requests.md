@@ -14,6 +14,7 @@ Features are somewhat organized, and many are just links to closed enhancement t
   - [Show progress in GUI when using external rsync](https://github.com/bcpierce00/unison/issues/549)
   - [Enable directory renaming within a root](https://github.com/bcpierce00/unison/issues/477)
   - [Tweak GUI tooltip strategy](https://github.com/bcpierce00/unison/issues/169)
+  - [Renaming of roots](https://github.com/bcpierce00/unison/issues/1023)
 
 # Non-portable efficiency improvements
 
