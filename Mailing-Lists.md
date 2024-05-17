@@ -8,9 +8,11 @@ Note also that the github issue tracker is strictly for bugs and feature request
 
 unison-users is a higher-volume discussion forum for users of unison. It is used for discussions of many sorts --- proposals and designs for new features, installation and configuration questions, usage tips, etc.  Generally, if the discussion requires an understanding of the current code base, it is more apppriate on -hackers.   unison-users is moderated to filter spam, so you should not expect your postings to appear immediately.   As with most lists, it requires subscription to post.
 
-This list is hosted by google groups, but does not require a google account to join. To join the list, send an email to `unison-users+subscribe@seas.upenn.edu`.   In 2022-11, there was one report that the method to join without a google account does not work, and one report that it did.
+This list is hosted by google groups, but does not require a google account to join. To join the list, send an email to `unison-users+subscribe@seas.upenn.edu` or join via Google Groups. In 2022-11, there was one report that the method to join without a google account does not work, and one report that it did.
 
-To post to the list, send to unison-users@seas.upenn.edu
+To post to the list, send to unison-users@seas.upenn.edu.
+
+Mailing list archives can be found at https://groups.google.com/a/seas.upenn.edu/g/unison-users. A subscription may be necessary to view the archives.
 
 As of 2020-10, there are roughly 1200 subscribers.
 
@@ -18,8 +20,10 @@ As of 2020-10, there are roughly 1200 subscribers.
 
 ## unison-hackers
 
-unison-hackers is for informal discussion among people seeking to improve Unison.  Anyone who wishes to lend a hand with maintaining and improving Unison is welcome to join, and that translates to "anyone would like to join is welcome".  Only members can post.
+unison-hackers is for informal discussion among people seeking to improve Unison.  Anyone who wishes to lend a hand with maintaining and improving Unison is welcome to join, and that translates to "anyone would like to join is welcome". Only members can post.
 
-unison-hackers is managed with the Mailman mailing list server.  To subscribe, visit http://lists.seas.upenn.edu/mailman/listinfo/unison-hackers
+unison-hackers is managed with the Mailman mailing list server. To subscribe, visit http://lists.seas.upenn.edu/mailman/listinfo/unison-hackers.
+
+Mailing list archives can be found at http://lists.seas.upenn.edu/pipermail/unison-hackers/
 
 As of 2020-10 there are roughly 275 subscribers.
